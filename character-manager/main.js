@@ -245,7 +245,7 @@ class SettingService {
         this.skills$ = this.setting$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(setting => setting.skills));
         this.skillsById$ = this.skills$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(mapById));
         this.talents$ = this.setting$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(setting => setting.talents));
-        http.get(`http://localhost:3000/setting`)
+        http.get(`https://newera-rpg.github.io/setting.json`)
             .subscribe(this.setting$$);
     }
 }
