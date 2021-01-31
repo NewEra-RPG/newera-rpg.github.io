@@ -1,0 +1,563 @@
+{
+  "attributes" : {
+    "primary" : [ {
+      "id" : "strength",
+      "name" : "Stärke",
+      "description" : "Stärke lässt einen Charakter physische Gewalt auf seine Umwelt ausüben. Sie\nhilft beim Verrücken von Möbeln ebenso wie bei der Umgestaltung der weltlichen\nGestalt von Feinden. Charaktere mit großer Kraft können Gegenstände und Personen\ntragen, werfen, zerren, schieben und auf verschiedenste Art demolieren."
+    }, {
+      "id" : "agility",
+      "name" : "Gewandtheit",
+      "description" : "Gewandtheit entscheidet darüber, wie ein Charakter sich bewegen kann und seinen\nKörper als Ganzes beherrscht. Ob bei einem wirbelnden Tanz, beim Balancieren auf\neinem Seil oder im Rhythmus eines Sattels. Ein gewandter Charakter gibt immer\neine gute Figur ab, wenn Schnelligkeit, Gleichgewicht, Eleganz und Körpergefühl\ngefragt sind."
+    }, {
+      "id" : "willpower",
+      "name" : "Wille",
+      "description" : "Wille ist die geistige Antriebskraft eines Charakters und bestimmt,\nwie unnachgiebig ein Charakter seine Ziele verfolgen und diese gegenüber\nHindernissen und Widersachern durchzusetzen vermag. Willensstarke Charaktere\nsind in der Lage, sich schneller für einen Kurs zu entscheiden und Versuchungen\nzu widerstehen, welche sie von demselben abbringen könnten."
+    }, {
+      "id" : "dexterity",
+      "name" : "Geschick",
+      "description" : "Geschick gibt an, wie schnell und sicher ein Charakter seine Hände und\nähnlich feinfühlige Gliedmaßen zu gebrauchen weiß. Geschick hilft beim Entwenden\nvon Habseligkeiten ebenso wie beim gezielten Platzieren eines geworfenen\nKüchenmessers in der Brust des Schurken, als auch bei der anschließenden\nEntfernung desselben aus der Wunde."
+    }, {
+      "id" : "memory",
+      "name" : "Gedächtnis",
+      "description" : "Gedächtnis ermöglicht einem Charakter, sich Informationen aneignen und wieder\nabrufen zu können. Charaktere mit einem guten Gedächtnis können große Mengen\nvermeintlich nutzlosen Wissens aufnehmen und dies jahrelang mit sich\nherumtragen, bis sich schließlich eine Gelegenheit bietet, es nutzbringend\neinzusetzen."
+    }, {
+      "id" : "perception",
+      "name" : "Wahrnehmung",
+      "description" : "Wahrnehmung ist die Gesamtheit aller Sinne, mit deren Hilfe ein Charakter die\nWelt erlebt. Durch ihre Wahrnehmung erkennen Charaktere Gefahren frühzeitig,\nfinden Gegenstände als auch Jagdbeute und unterscheiden zwischen lebenspendender\nNahrung und tödlichem Gift."
+    } ],
+    "secondary" : [ {
+      "id" : "athletics",
+      "name" : "Athletik",
+      "description" : "Athletik kombiniert Kraft mit der Fähigkeit, diese gezielt und effektiv\neinzusetzen. Dadurch kann sowohl der eigene Körper schnell beschleunigt und\nHindernisse überwunden werden. Darüber hinaus wird er zu einer effektiven Waffe,\nwelche Gegner gezielt zu Boden bringen kann.",
+      "dependencies" : [ {
+        "id" : "strength",
+        "name" : "Stärke"
+      }, {
+        "id" : "agility",
+        "name" : "Gewandtheit"
+      } ]
+    }, {
+      "id" : "charisma",
+      "name" : "Ausstrahlung",
+      "description" : "Ausstrahlung beschreibt, wie viel Selbstvertrauen du ausstrahlst und wie die\nWahrnehmung anderer Menschen durch deine Bewegungsmuster und Körpersprache\nbeeinflusst wird. Mit einer positiven Ausstrahlung fällt es dir leichter, die\nAufmerksamkeit von Menschen auf dich zu ziehen und zu halten. Es ermöglicht dir,\nmit einem guten ersten Eindruck in eine Unterhaltung zu starten und erleichtert\nes dadurch, Menschen von deiner Sichtweise zu überzeugen.",
+      "dependencies" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit"
+      }, {
+        "id" : "willpower",
+        "name" : "Wille"
+      } ]
+    }, {
+      "id" : "endurance",
+      "name" : "Ausdauer",
+      "description" : "Audauer lässt einen Charakter schwere Zeiten überstehen. Ein starker Wille und\nkörperliche Abhärtung ermöglichen es einem ausdauernden Charakter, Schmerzen zu\nertragen und sowohl Wunden als auch Entbehrungen wie Hunger und Kälte besser zu\nverkraften. Aber auch Märsche mit schwerem Gepäck und Kämpfe in schwerer Rüstung\nkönnen sie ertragen. Ausdauernden Charakteren fällt es auch leichter, andere von\nihrer körperlichen Überlegenheit zu überzeugen und dadurch einzuschüchtern. ",
+      "dependencies" : [ {
+        "id" : "willpower",
+        "name" : "Wille"
+      }, {
+        "id" : "strength",
+        "name" : "Stärke"
+      } ]
+    }, {
+      "id" : "crafting",
+      "name" : "Handwerk",
+      "description" : "Handwerk erschafft all die schönen und nützlichen Dinge, angefangen beim\nZahnstocher über das Schwert des tapferen Kriegers, bis zum Wagen auf dem der\nProviant liegt und der Palisade hinter der man gerne kauert, wenn der Feind\nnaht. Fähige Handwerker sind allseits angesehen für ihre geschickten Hände und\nihr Gedächtnis über die Verarbeitung von allerlei Waren und verfügen über ein\nansehnliches regelmäßiges Einkommen.",
+      "dependencies" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick"
+      }, {
+        "id" : "memory",
+        "name" : "Gedächtnis"
+      } ]
+    }, {
+      "id" : "insight",
+      "name" : "Erkenntnis",
+      "description" : "Erkenntnis ermöglicht einem Charakter, komplexe Zusammenhänge wahrzunehmen und\nmit ihrem eigenen Gedächtnis zu vergleichen, um zu neuen Schlussfolgerungen zu\ngelangen. Charaktere mit tiefgreifender Erkenntnis können Situationen und\nPersonen gut einschätzen und intuitiv verstehen.",
+      "dependencies" : [ {
+        "id" : "memory",
+        "name" : "Gedächtnis"
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung"
+      } ]
+    }, {
+      "id" : "precision",
+      "name" : "Präzision",
+      "description" : "Präzision lässt einen Charakter auch weit entfernte oder schwer erkennbare Ziele\ntreffen. Charaktere mit hoher Präzision können auch Handlungen auch durchführen,\nbei denen ihre Sinne nur eingeschränkt zur Verfügung stehen, weil beispielsweise\ndie Sicht auf einen Teil eines Mechanismus verborgen ist.",
+      "dependencies" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung"
+      }, {
+        "id" : "dexterity",
+        "name" : "Geschick"
+      } ]
+    } ]
+  },
+  "skills" : [ {
+    "id" : "acrobatics",
+    "name" : "Akrobatik",
+    "description" : "Ein akrobatischer Charakter kann besonders hoch und weit springen und besitzt\neine besonders außergewöhnliche Körperbeherrschung. Er kann anspruchsvolle\nKunststücke wie Überschläge, Salti und Pirouetten vollführen, sich an Seilen,\nStangen und anderen Vorrichtung entlang schwingen und über dieselben\nbalancieren."
+  }, {
+    "id" : "alertness",
+    "name" : "Aufmerksamkeit",
+    "description" : "Ein aufmerksamer Charakter findet zielsicher, was er sucht und\ngelegentlich auch mehr oder weniger interessantes, mit dem er nicht gerechnet\nhätte. Er erkennt auch feinsinnige Hinweise wie ungewöhnlich beschaffene oder\nfehlplatzierte Gegenstände, sowie Spuren von Lebenszeichen und Bewegung wie\naufgewirbelte Staubkörner oder die Wärme einer kürzlich gelöschten Kerze."
+  }, {
+    "id" : "chemistry",
+    "name" : "Chemie",
+    "description" : "Ein Charakter, der Chemie beherrscht, kann verschiedenste Inhaltsstoffe von\nPflanzen, aber aus tierischen oder mineralischen Quellen extrahieren, mischen\nund veredeln. Durch diese Kenntnisse lassen sich vom einfachen Kräutertee über\nalkoholische Getränke bis zu medizinischen Tinkturen und Giften allerlei\nherstellen, was Leib und Seele nützt oder schadet. Die endgültige Form des\nHergestellten können Tränke, Tinkturen, Salben und weiteres sein."
+  }, {
+    "id" : "driving",
+    "name" : "Fahren",
+    "description" : "Ein Charakter, der sich beim Fahren wohlfühlt, kann seine Wege meist rasch und\nsicher zurücklegen, wobei hin und wieder die Geschwindigkeit gegen die\nSicherheit abgewogen werden muss. Ein guter Fahrer kann typische Landgefährte\nGespanne und Kutschen steuern und diese rasend schnell durch die Gassen einer\nbelebten Stadt lenken oder behutsam über Stock und Stein führen, ohne Rad und\nAchsen zu beschädigen."
+  }, {
+    "id" : "history",
+    "name" : "Geschichte",
+    "description" : "Ein Charakter, der in Geschichte gelehrt ist, kann nahezu jede Person und jedes\nErlebnis in einem größeren Zusammenhang sehen. Er kennt wichtige\nPersönlichkeiten und kann ihnen Ereignisse zuordnen, in die sie verwickelt\nwaren. Er versteht die Bündnisse und Fehden einzelner Familien und ganzer Städte\nund kann zwischen diesen Verknüpfungen manövrieren. Er hat ferner Kenntnisse\nüber die Weltgeschichte und hat von dem ein oder anderen mächtigen Artefakt\ngehört."
+  }, {
+    "id" : "society",
+    "name" : "Gesellschaft",
+    "description" : "An Geselligkeit gewöhnte Charaktere finden sich leichter in der Gesellschaft\nzurecht und sind in der Lage, die Intentionen ihrer Mitmenschen zu deuten. Sie\nkönnen dies nutzen, um sich selbst vor böswilligen Übergriffen oder\nunvorteilhaften Abmachungen zu schützen. Ebenso sind sie fähig, andere zu\nverstehen, Trost zu spenden und zu motivieren, als auch ihre\nVerhandlungsposition durch geschicktes Ausnutzen von Schwächen zu verbessern."
+  }, {
+    "id" : "medicine",
+    "name" : "Medizin",
+    "description" : "Ein in Medizin geschulter Charakter kann erkennen, was einen lebenden Körper\nplagen oder wie ein Verstorbener sein Ende gefunden haben mag. Er kann\nKrankheiten kurieren, Wunden verbinden, gebrochene Knochen richten und auch\nsonstige Leiden lindern. Sein Wissen über die körperliche Zerbrechlichkeit kann\ner aber ebenso einsetzen, um grauenvolle Schmerzen und unheilbaren Schaden zu\nverursachen."
+  }, {
+    "id" : "stealth",
+    "name" : "Heimlichkeit",
+    "description" : "Ein Charakter, der Heimlichkeit beherrscht, kann sich vor Augen, Ohren und\nanderen Sinnen verbergen. Er kann mit seiner Umgebung verschmelzen, sich leise\nbewegen und die Sinne seiner Verfolger oder auch seiner Opfer verwirren. Er ist\ngeschickt darin, sein Handeln zu verschleiern und falsche Spuren zu legen."
+  }, {
+    "id" : "woodworking",
+    "name" : "Holzverarbeitung",
+    "description" : "Sich mit Holzverarbeitung auszukennen ermöglicht einem Charakter die\nHerstellung, Reparatur, Pflege und Verbesserung von Werkzeugen, Schilden und\nbestimmter Waffen wie Bögen oder Speere. Er kann sogar Fahrzeuge, Boote und\nSchiffe, Belagerungswaffen, Wehranlagen und Gebäude oder Teile davon errichten\nsowie andere dabei anleiten. Des weiteren kann er den Wert und Zustand hölzerner\nObjekte fachkundig bewerten."
+  }, {
+    "id" : "climbing",
+    "name" : "Klettern",
+    "description" : "Ein Charakter, der Klettern kann, vermag es, Bäume und Mauern zu erklimmen und\nschreckt auch vor felsigen Hindernissen und luftigen Höhen nicht zurück. Ein\nKletterer verfügt über kräftige Oberkörper und können sich mit drahtseilartiger\nKraft an Vorsprüngen und jeglichem Halt festklammern."
+  }, {
+    "id" : "melee",
+    "name" : "Nahkampf",
+    "description" : "Zum Nahkampf gehören unbewaffnete Schläge, Tritte, Würfe und Ringkampf.\nDes Weiteren zählen Angriffe mit speziellen Nahkampfwaffen wie Schlagringen dazu."
+  }, {
+    "id" : "metalworking",
+    "name" : "Metallverarbeitung",
+    "description" : "Ein Charakter, der in Metallverarbeitung geübt ist, kann metallische\nGegenstände wie Werkzeuge und verschiedenste Waffen wie Schwerter, Speer- und\nPfeilspitzen sowie Rüstungen aus Metallschuppen und -platten oder Kettengeflecht\nherstellen. Mit ausreichend hochwertigem Metall und einer Werkstatt kann er\nsogar gepanzerte Fahrzeuge und Kampfmaschinen bauen. Er kann den Wert und\nZustand metallischer Gegenstände einschätzen."
+  }, {
+    "id" : "mechanics",
+    "name" : "Mechanik",
+    "description" : "Ein Charakter, der die Funktionsweise von Mechanismen versteht, kann mechanische\nGerätschaften ein- oder ausschalten, ihre Arbeitsweise in seinem Ermessen\nbeeinflussen, sie sabotieren oder reparieren. Während er einfache Mechanismen\nintuitiv bedienen kann, muss er komplexere Maschinen vorher eingehend studieren.\nEr ist außerdem in der Lage, Bedienungs- und Bauanleitungen sowie schematische\nZeichnungen aller Art zu interpretieren."
+  }, {
+    "id" : "biology",
+    "name" : "Biologie",
+    "description" : "Ein in Biologie geschulter Charakter ist fähig, verschiedenste Pflanzen selbst\nanzubauen oder ausfindig zu machen und eindeutig zu identifizieren. Er kennt\nihre Wirkstoffe und weiß, wie diese als Nahrungs- oder Heilmittel aber ebenso\nals Gift verwendet werden können. Ein Kräuterkundiger kann neben der Kenntnis\nüber einheimische Pflanzen auch exotische Gewächse ihrer ungefähren Herkunft\nzuordnen."
+  }, {
+    "id" : "geography",
+    "name" : "Geographie",
+    "description" : "..."
+  }, {
+    "id" : "swimming",
+    "name" : "Schwimmen",
+    "description" : "Ein Charakter, der das Schwimmen meistert, kann sich effizient in und unter\nWasser fortbewegen. Er verfügt über ein großes Lungenvolumen, um für längere\nZeit unterzutauchen und beherrscht verschiedene Schwimmtechniken. Mit diesen\nkann er sowohl kurze als auch lange Strecken schnell und mit minimaler\nAnstrengung zurücklegen und sich zumindest teilweise der Strömung widersetzen."
+  }, {
+    "id" : "riding",
+    "name" : "Reiten",
+    "description" : "Ein Charakter, der im Reiten geübt ist, kann sich auf Reittieren – üblicherweise\nPferden – im Sattel halten und auf deren Rücken längere Reisen bestreiten, in\nhalsbrecherischem Galopp vorwärts preschen und dabei auch unter widrigen\nBedingungen die Kontrolle behalten. Er kann seine erhöhte Position effektiv im\nKampf nutzen und gewagte Manöver vollführen um Schaden von sich und seinem\nReittier abzuhalten."
+  }, {
+    "id" : "tailoring",
+    "name" : "Stoffverarbeitung",
+    "description" : "Ein Charakter, der Stoffverarbeitung gelernt hat, kann verschiedenste nützliche\nGegenstände aus pflanzlichen und tierischen Stoffen herstellen. Er kennt sich\nmit verschiedenen Verarbeitungstechniken wie Spinnen, Weben, Nähen und Sticken\naus. Er kann für verschiedene Anlässe und Bedingungen passende Kleidung\nherstellen, die den Träger vor Wind und Wetter schützt oder als leichte Rüstung\noder Verkleidung dient."
+  }, {
+    "id" : "trading",
+    "name" : "Handel",
+    "description" : "Ein Charakter, der sich in der Welt des Handels auskennt, kann den Wert von\nWaren und Dienstleistungen einschätzen und weiß, wo er die günstigsten Preise\nfindet und noch bessere aushandeln kann."
+  }, {
+    "id" : "language",
+    "name" : "Sprache",
+    "description" : "Einem Charakter, der in Sprache geübt ist, kann raffiniert formulierte Reden und\nDokumente verfassen und seinen Stil anpassen, um bestimmte Reaktionen bei den\nEmpfängern hervorzurufen. Er verfügt über einen großen Wortschatz, exakte\nRechtschreibung und Grammatik und beherrscht Redewendungen, Wortspiele und\nDoppeldeutigkeit. Es fällt ihm leicht, Fremdsprachen zu lernen und er kann er\nversuchen, die Bedeutung unbekannter Worte intuitiv herzuleiten."
+  }, {
+    "id" : "deception",
+    "name" : "Täuschung",
+    "description" : "Ein in Täuschung geübter Charakter vermag seinen Mitmenschen das vorzugaukeln,\nwas er für vorteilhaft hält. Ihm fällt es leicht, Lügen glaubhaft zu verkaufen\nund ganze Geschichten zu erfinden. Er kann seinen Charakter verstellen, seine\nMotive verbergen und sogar lernen, die Stimme und das Verhalten anderer Menschen\nnachzuahmen."
+  }, {
+    "id" : "tactics",
+    "name" : "Taktik",
+    "description" : "Ein taktisch kluger Charakter versteht sich auf die kluge Positionierung und\nBewegung im Kampf. Er kann erkennen, wo das Gelände Deckung und freie Sicht auf\nden Feind gewährt und welche Umgebung für seine Seite vorteilhaft und den Gegner\nhinderlich ist. Er kann die Kampfweise seiner Verbündeten beeinflussen und dazu\nbeitragen, dass diese schneller und effektiver Handeln können."
+  }, {
+    "id" : "weapon_impact",
+    "name" : "Wuchtwaffen",
+    "description" : "Wuchtwaffen umfassen eine breite Auswahl an Waffen, die vorrangig durch \nSchlagkraft Schaden verursachen. Dazu zählen Stöcke und Keulen, aber auch\nMorgensterne und gewaltige Kriegshämmer."
+  }, {
+    "id" : "weapon_missile",
+    "name" : "Wurfwaffen",
+    "description" : "Wurfwaffen sind alle Waffen, die zum Werfen geeignet sind. Dies umfasst einfache\nSteine und Steinschleudern sowie auch Wurfsterne, Wurfspeere, Wurfspeere und\nGranaten."
+  }, {
+    "id" : "weapon_range",
+    "name" : "Fernwaffen",
+    "description" : "Unter Fernwaffen fallen alle Waffen, die für den Angriff auf weitere Distanz\nausgelegt sind. Dazu gehören Bögen, Armbrüste, Pistolen und Gewehre."
+  }, {
+    "id" : "weapon_pole",
+    "name" : "Stangenwaffen",
+    "description" : "Zu den Stangenwaffen zählen all jene Waffen, die sich durch Reichweite\nauszeichnen. Darunter fallen Stäbe, Speere, Spieße, Gleven und Langäxte."
+  }, {
+    "id" : "weapon_blade",
+    "name" : "Klingenwaffen",
+    "description" : "Klingenwaffen zeichnen sich dadurch aus, dass sie größtenteils aus einer\nscharfen Metallklinge bestehen. Dazu gehören Messer, Schwerter und Säbel."
+  } ],
+  "talents" : [ {
+    "id" : "fistfight",
+    "name" : "Faustkampf",
+    "description" : "Du kannst ordentlich mit den Fäusten austeilen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "melee",
+        "name" : "Nahkampf",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_hearing",
+    "name" : "Scharfer Blick",
+    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
+    "cost" : 4,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "hard_punches",
+    "name" : "Harte Schläge",
+    "description" : "Der Schaden deiner unbewaffneten Angriffe erhöht sich um 1.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "melee",
+        "name" : "Nahkampf",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_scent",
+    "name" : "Feiner Geruch",
+    "description" : "Du hast eine feine Nase, mit der du Gerüche aufspüren und unterscheiden kannst.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "drink_resistance",
+    "name" : "Trinkfestigkeit",
+    "description" : "Du kannst größere Mengen Alkohol trinken, ohne negative Effekte zu verspüren.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "endurance",
+        "name" : "Ausdauer",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "electricity",
+    "name" : "Elektrizität",
+    "description" : "Du verstehst die Grundlagen der elektrischen Ströme.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "mechanics",
+        "name" : "Mechanik",
+        "level" : 3
+      }, {
+        "id" : "metalworking",
+        "name" : "Metallverarbeitung",
+        "level" : 1
+      }, {
+        "id" : "chemistry",
+        "name" : "Chemie",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "booming_voice",
+    "name" : "Donnernde Stimme",
+    "description" : "Deine unüberhörbare Stimme verschafft dir Gehör und flößt deinem Gegenüber\nRespekt ein.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "strength",
+        "name" : "Stärke",
+        "level" : 7
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_devices",
+    "name" : "Alte Mechanismen",
+    "description" : "Du verstehst, wie die Mechanismen der alten Welt funktioniert haben und kannst\nversuchen, diese zu verwenden, sofern sie noch intakt sind.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "mechanics",
+        "name" : "Mechanik",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      }, {
+        "id" : "electricity",
+        "name" : "Elektrizität"
+      } ]
+    }
+  }, {
+    "id" : "handgun_shooting",
+    "name" : "Pistolenschießen",
+    "description" : "Du kannst mit einer Pistole deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "weapon_range",
+        "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "wire_senews",
+    "name" : "Drahtsehnen",
+    "description" : "Die Sehnen deines Körpers sind stark wie Drahtseile.\nDu kannst dich länger als andere an kleinsten Vorsprüngen festhalten.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "endurance",
+        "name" : "Ausdauer",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "climbing",
+        "name" : "Klettern",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "balance",
+    "name" : "Balancieren",
+    "description" : "Du kannst auf schmalen Wegen die Balance halten.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "acrobatics",
+        "name" : "Akrobatik",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_taste",
+    "name" : "Feiner Geschmack",
+    "description" : "Du hast eine feine Zunge, die unterschiedlichste Geschmäcker unterscheiden kann.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_sight",
+    "name" : "Scharfer Blick",
+    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
+    "cost" : 5,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_language",
+    "name" : "Alte Sprache",
+    "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 12
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      } ]
+    }
+  }, {
+    "id" : "old_locations",
+    "name" : "Alte Orte",
+    "description" : "Du kennst einige Orte der Alten Zeit und kannst diese möglicherweise finden.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "geography",
+        "name" : "Geographie",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      } ]
+    }
+  }, {
+    "id" : "trade_language",
+    "name" : "Handelssprache",
+    "description" : "Du beherschst die Handelssprache.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 2
+      }, {
+        "id" : "trading",
+        "name" : "Handel",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "crossbow_shooting",
+    "name" : "Armbrustschießen",
+    "description" : "Du kannst mit einer Armbust deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "weapon_range",
+        "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "archery",
+    "name" : "Bogenschießen",
+    "description" : "Du kannst mit einem Bogen deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 10
+      } ],
+      "skills" : [ {
+        "id" : "weapon_range",
+        "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_knowledge",
+    "name" : "Altes Wissen",
+    "description" : "Du kennst dich mit der frühen Geschichte der Welt aus.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "memory",
+        "name" : "Gedächtnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "history",
+        "name" : "Geschichte",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  } ]
+}
