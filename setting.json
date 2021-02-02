@@ -203,35 +203,41 @@
     "description" : "Klingenwaffen zeichnen sich dadurch aus, dass sie größtenteils aus einer\nscharfen Metallklinge bestehen. Dazu gehören Messer, Schwerter und Säbel."
   } ],
   "talents" : [ {
-    "id" : "keen_hearing",
-    "name" : "Scharfes Gehör",
-    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
-    "cost" : 4,
-    "innate" : true,
+    "id" : "pike_fighting",
+    "name" : "Spießkampf",
+    "cost" : 3,
+    "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnhemung",
+        "id" : "willpower",
+        "name" : "Wille",
         "level" : 9
+      }, {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 7
       } ],
-      "skills" : [ ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 3
+      } ],
       "talents" : [ ]
     }
   }, {
-    "id" : "hard_punches",
-    "name" : "Harte Schläge",
-    "description" : "Der Schaden deiner unbewaffneten Angriffe erhöht sich um 1.",
+    "id" : "axe_throwing",
+    "name" : "Axtwerfen",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
       "attributes" : [ {
         "id" : "athletics",
         "name" : "Athletik",
-        "level" : 11
+        "level" : 9
       } ],
       "skills" : [ {
-        "id" : "melee",
-        "name" : "Nahkampf",
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
         "level" : 3
       } ],
       "talents" : [ ]
@@ -250,88 +256,6 @@
       } ],
       "skills" : [ ],
       "talents" : [ ]
-    }
-  }, {
-    "id" : "drink_resistance",
-    "name" : "Trinkfestigkeit",
-    "description" : "Du kannst größere Mengen Alkohol trinken, ohne negative Effekte zu verspüren.",
-    "cost" : 2,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "endurance",
-        "name" : "Ausdauer",
-        "level" : 9
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "electricity",
-    "name" : "Elektrizität",
-    "description" : "Du verstehst die Grundlagen der elektrischen Ströme.",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "insight",
-        "name" : "Erkenntnis",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "mechanics",
-        "name" : "Mechanik",
-        "level" : 3
-      }, {
-        "id" : "metalworking",
-        "name" : "Metallverarbeitung",
-        "level" : 1
-      }, {
-        "id" : "chemistry",
-        "name" : "Chemie",
-        "level" : 1
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "booming_voice",
-    "name" : "Donnernde Stimme",
-    "description" : "Deine unüberhörbare Stimme verschafft dir Gehör und flößt deinem Gegenüber\nRespekt ein.",
-    "cost" : 3,
-    "innate" : true,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "strength",
-        "name" : "Stärke",
-        "level" : 7
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "old_devices",
-    "name" : "Alte Mechanismen",
-    "description" : "Du verstehst, wie die Mechanismen der alten Welt funktioniert haben und kannst\nversuchen, diese zu verwenden, sofern sie noch intakt sind.",
-    "cost" : 2,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "insight",
-        "name" : "Erkenntnis",
-        "level" : 13
-      } ],
-      "skills" : [ {
-        "id" : "mechanics",
-        "name" : "Mechanik",
-        "level" : 5
-      } ],
-      "talents" : [ {
-        "id" : "old_knowledge",
-        "name" : "Altes Wissen"
-      }, {
-        "id" : "electricity",
-        "name" : "Elektrizität"
-      } ]
     }
   }, {
     "id" : "handgun_shooting",
@@ -353,21 +277,20 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "wire_senews",
-    "name" : "Drahtsehnen",
-    "description" : "Die Sehnen deines Körpers sind stark wie Drahtseile.\nDu kannst dich länger als andere an kleinsten Vorsprüngen festhalten.",
-    "cost" : 2,
+    "id" : "knife_throwing",
+    "name" : "Messerwerfen",
+    "cost" : 3,
     "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "endurance",
-        "name" : "Ausdauer",
-        "level" : 9
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
       } ],
       "skills" : [ {
-        "id" : "climbing",
-        "name" : "Klettern",
-        "level" : 2
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
+        "level" : 3
       } ],
       "talents" : [ ]
     }
@@ -433,18 +356,21 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "keen_taste",
-    "name" : "Feiner Geschmack",
-    "description" : "Du hast eine feine Zunge, die unterschiedlichste Geschmäcker unterscheiden kann.",
+    "id" : "knife_fighting",
+    "name" : "Messerkampf",
     "cost" : 3,
-    "innate" : true,
+    "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnhemung",
-        "level" : 9
+        "id" : "precision",
+        "name" : "Präzision",
+        "level" : 8
       } ],
-      "skills" : [ ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 2
+      } ],
       "talents" : [ ]
     }
   }, {
@@ -467,18 +393,21 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "keen_sight",
-    "name" : "Scharfer Blick",
-    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
-    "cost" : 5,
-    "innate" : true,
+    "id" : "spear_throwing",
+    "name" : "Speerwerfen",
+    "cost" : 2,
+    "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnhemung",
-        "level" : 9
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
       } ],
-      "skills" : [ ],
+      "skills" : [ {
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
+        "level" : 2
+      } ],
       "talents" : [ ]
     }
   }, {
@@ -504,43 +433,46 @@
       } ]
     }
   }, {
-    "id" : "old_locations",
-    "name" : "Alte Orte",
-    "description" : "Du kennst einige Orte der Alten Zeit und kannst diese möglicherweise finden.",
-    "cost" : 4,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "insight",
-        "name" : "Erkenntnis",
-        "level" : 13
-      } ],
-      "skills" : [ {
-        "id" : "geography",
-        "name" : "Geographie",
-        "level" : 5
-      } ],
-      "talents" : [ {
-        "id" : "old_knowledge",
-        "name" : "Altes Wissen"
-      } ]
-    }
-  }, {
-    "id" : "trade_language",
-    "name" : "Handelssprache",
-    "description" : "Du beherschst die Handelssprache.",
+    "id" : "spear_fighting",
+    "name" : "Speerkampf",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
-      "attributes" : [ ],
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 8
+      } ],
       "skills" : [ {
-        "id" : "language",
-        "name" : "Sprache",
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "lance_riding",
+    "name" : "Lanzenreiten",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "strength",
+        "name" : "Stärke",
+        "level" : 7
+      }, {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
         "level" : 2
       }, {
-        "id" : "trading",
-        "name" : "Handel",
-        "level" : 1
+        "id" : "riding",
+        "name" : "Reiten",
+        "level" : 2
       } ],
       "talents" : [ ]
     }
@@ -555,25 +487,6 @@
         "id" : "dexterity",
         "name" : "Geschick",
         "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "range_weapon",
-        "name" : "Fernwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "archery",
-    "name" : "Bogenschießen",
-    "description" : "Du kannst mit einem Bogen deine Ziele treffen.",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "dexterity",
-        "name" : "Geschick",
-        "level" : 10
       } ],
       "skills" : [ {
         "id" : "range_weapon",
@@ -602,6 +515,24 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "stick_fighting",
+    "name" : "Stockkampf",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "old_knowledge",
     "name" : "Altes Wissen",
     "description" : "Du kennst dich mit der frühen Geschichte der Welt aus.",
@@ -617,6 +548,438 @@
         "id" : "history",
         "name" : "Geschichte",
         "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "staff_fighting",
+    "name" : "Stabkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_hearing",
+    "name" : "Scharfes Gehör",
+    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
+    "cost" : 4,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "hard_punches",
+    "name" : "Harte Schläge",
+    "description" : "Der Schaden deiner unbewaffneten Angriffe erhöht sich um 1 je 8 Stärke.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "melee",
+        "name" : "Nahkampf",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "rapier_fighting",
+    "name" : "Degenfechten",
+    "description" : "",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 7
+      }, {
+        "id" : "precision",
+        "name" : "Präzision",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "drink_resistance",
+    "name" : "Trinkfestigkeit",
+    "description" : "Du kannst größere Mengen Alkohol trinken, ohne negative Effekte zu verspüren.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "endurance",
+        "name" : "Ausdauer",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "electricity",
+    "name" : "Elektrizität",
+    "description" : "Du verstehst die Grundlagen der elektrischen Ströme.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "mechanics",
+        "name" : "Mechanik",
+        "level" : 3
+      }, {
+        "id" : "metalworking",
+        "name" : "Metallverarbeitung",
+        "level" : 1
+      }, {
+        "id" : "chemistry",
+        "name" : "Chemie",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "booming_voice",
+    "name" : "Donnernde Stimme",
+    "description" : "Deine unüberhörbare Stimme verschafft dir Gehör und flößt deinem Gegenüber\nRespekt ein.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "strength",
+        "name" : "Stärke",
+        "level" : 7
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "hammer_fighting",
+    "name" : "Hammerkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "shotgun_shooting",
+    "name" : "Flintenschießen",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 7
+      }, {
+        "id" : "strength",
+        "name" : "Stärke",
+        "level" : 7
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_devices",
+    "name" : "Alte Mechanismen",
+    "description" : "Du verstehst, wie die Mechanismen der alten Welt funktioniert haben und kannst\nversuchen, diese zu verwenden, sofern sie noch intakt sind.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "mechanics",
+        "name" : "Mechanik",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      }, {
+        "id" : "electricity",
+        "name" : "Elektrizität"
+      } ]
+    }
+  }, {
+    "id" : "wire_senews",
+    "name" : "Drahtsehnen",
+    "description" : "Die Sehnen deines Körpers sind stark wie Drahtseile.\nDu kannst dich länger als andere an kleinsten Vorsprüngen festhalten.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "endurance",
+        "name" : "Ausdauer",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "climbing",
+        "name" : "Klettern",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "longaxe_fighting",
+    "name" : "Langaxtkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "rifle_shooting",
+    "name" : "Gewehrschießen",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_taste",
+    "name" : "Feiner Geschmack",
+    "description" : "Du hast eine feine Zunge, die unterschiedlichste Geschmäcker unterscheiden kann.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "mace_fighting",
+    "name" : "Keulenkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "chain_fighting",
+    "name" : "Kettenkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "gleve_fighting",
+    "name" : "Glevenkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_sight",
+    "name" : "Scharfer Blick",
+    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
+    "cost" : 5,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_locations",
+    "name" : "Alte Orte",
+    "description" : "Du kennst einige Orte der Alten Zeit und kannst diese möglicherweise finden.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "geography",
+        "name" : "Geographie",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      } ]
+    }
+  }, {
+    "id" : "sword_fighting_1h",
+    "name" : "Schwertkampf (einhändig)",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "slingshot_hurling",
+    "name" : "Schleudern",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "trade_language",
+    "name" : "Handelssprache",
+    "description" : "Du beherschst die Handelssprache.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 2
+      }, {
+        "id" : "trading",
+        "name" : "Handel",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "archery",
+    "name" : "Bogenschießen",
+    "description" : "Du kannst mit einem Bogen deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 10
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 2
       } ],
       "talents" : [ ]
     }
@@ -857,19 +1220,19 @@
       "name" : "Axt"
     }, {
       "id" : "mace",
-      "name" : "",
+      "name" : "Keule",
       "description" : ""
     }, {
       "id" : "hammer",
-      "name" : "",
+      "name" : "Hammer",
       "description" : ""
     }, {
       "id" : "stick",
-      "name" : "",
+      "name" : "Stock",
       "description" : ""
     }, {
       "id" : "chain",
-      "name" : "",
+      "name" : "Kette",
       "description" : ""
     } ]
   }, {
@@ -878,19 +1241,19 @@
     "description" : "",
     "subtypes" : [ {
       "id" : "slingshot",
-      "name" : "",
+      "name" : "Schleuder",
       "description" : ""
     }, {
       "id" : "throwing_knive",
-      "name" : "",
+      "name" : "Wurfmesser",
       "description" : ""
     }, {
       "id" : "throwing_axe",
-      "name" : "",
+      "name" : "Wurfaxt",
       "description" : ""
     }, {
       "id" : "throwing_spear",
-      "name" : "",
+      "name" : "Wurfspeer",
       "description" : ""
     } ]
   }, {
@@ -899,23 +1262,23 @@
     "description" : "",
     "subtypes" : [ {
       "id" : "bow",
-      "name" : "",
+      "name" : "Bogen",
       "description" : ""
     }, {
       "id" : "crossbow",
-      "name" : "",
+      "name" : "Armbrust",
       "description" : ""
     }, {
       "id" : "handgun",
-      "name" : "",
+      "name" : "Pistole",
       "description" : ""
     }, {
       "id" : "shotgun",
-      "name" : "",
+      "name" : "Flinte",
       "description" : ""
     }, {
       "id" : "rifle",
-      "name" : "",
+      "name" : "Gewehr",
       "description" : ""
     } ]
   }, {
@@ -924,26 +1287,26 @@
     "description" : "",
     "subtypes" : [ {
       "id" : "gleve",
-      "name" : "",
+      "name" : "Gleve",
       "description" : ""
     }, {
       "id" : "longaxe",
-      "name" : "",
+      "name" : "Langaxt",
       "description" : ""
     }, {
       "id" : "spear",
       "name" : "Speer"
     }, {
       "id" : "pike",
-      "name" : "",
+      "name" : "Spieß",
       "description" : ""
     }, {
       "id" : "lance",
-      "name" : "",
+      "name" : "Lanze",
       "description" : ""
     }, {
       "id" : "staff",
-      "name" : "",
+      "name" : "Stab",
       "description" : ""
     } ]
   }, {
@@ -952,15 +1315,19 @@
     "description" : "",
     "subtypes" : [ {
       "id" : "knife",
-      "name" : "",
+      "name" : "Messer",
       "description" : ""
     }, {
-      "id" : "sword",
-      "name" : "Schwert",
+      "id" : "sword_1h",
+      "name" : "Schwert (einhändig)",
+      "description" : ""
+    }, {
+      "id" : "sword_2h",
+      "name" : "Schwert (zweihändig)",
       "description" : ""
     }, {
       "id" : "rapier",
-      "name" : "",
+      "name" : "Degen",
       "description" : ""
     } ]
   } ],
@@ -977,8 +1344,8 @@
           "name" : "Klingenwaffe"
         },
         "subtype" : {
-          "id" : "sword",
-          "name" : "Schwert"
+          "id" : "sword_1h",
+          "name" : "Schwert (einhändig)"
         },
         "reach" : 0.5,
         "range" : 0,
