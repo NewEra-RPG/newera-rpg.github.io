@@ -533,6 +533,24 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "sword_fighting_2h",
+    "name" : "Schwertkampf (zweihändig)",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "old_knowledge",
     "name" : "Altes Wissen",
     "description" : "Du kennst dich mit der frühen Geschichte der Welt aus.",
@@ -918,7 +936,7 @@
       "attributes" : [ {
         "id" : "athletics",
         "name" : "Athletik",
-        "level" : 9
+        "level" : 8
       } ],
       "skills" : [ {
         "id" : "blade_weapon",
