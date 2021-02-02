@@ -22,7 +22,7 @@
       "description" : "Gedächtnis ermöglicht einem Charakter, sich Informationen aneignen und wieder\nabrufen zu können. Charaktere mit einem guten Gedächtnis können große Mengen\nvermeintlich nutzlosen Wissens aufnehmen und dies jahrelang mit sich\nherumtragen, bis sich schließlich eine Gelegenheit bietet, es nutzbringend\neinzusetzen."
     }, {
       "id" : "perception",
-      "name" : "Wahrnehmung",
+      "name" : "Wahrnhemung",
       "description" : "Wahrnehmung ist die Gesamtheit aller Sinne, mit deren Hilfe ein Charakter die\nWelt erlebt. Durch ihre Wahrnehmung erkennen Charaktere Gefahren frühzeitig,\nfinden Gegenstände als auch Jagdbeute und unterscheiden zwischen lebenspendender\nNahrung und tödlichem Gift."
     } ],
     "secondary" : [ {
@@ -50,7 +50,7 @@
     }, {
       "id" : "endurance",
       "name" : "Ausdauer",
-      "description" : "Audauer lässt einen Charakter schwere Zeiten überstehen. Ein starker Wille und\nkörperliche Abhärtung ermöglichen es einem ausdauernden Charakter, Schmerzen zu\nertragen und sowohl Wunden als auch Entbehrungen wie Hunger und Kälte besser zu\nverkraften. Aber auch Märsche mit schwerem Gepäck und Kämpfe in schwerer Rüstung\nkönnen sie ertragen. Ausdauernden Charakteren fällt es auch leichter, andere von\nihrer körperlichen Überlegenheit zu überzeugen und dadurch einzuschüchtern. ",
+      "description" : "Audauer lässt einen Charakter schwere Zeiten überstehen. Ein starker Wille und\nkörperliche Abhärtung ermöglichen es einem ausdauernden Charakter, Schmerzen zu\nertragen und sowohl Wunden als auch Entbehrungen wie Hunger und Kälte besser zu\nverkraften. Aber auch Märsche mit schwerem Gepäck und Kämpfe in schwerer Rüstung\nkönnen sie ertragen. Ausdauernden Charakteren fällt es auch leichter, andere von\nihrer körperlichen Überlegenheit zu überzeugen und dadurch einzuschüchtern.",
       "dependencies" : [ {
         "id" : "willpower",
         "name" : "Wille"
@@ -78,7 +78,7 @@
         "name" : "Gedächtnis"
       }, {
         "id" : "perception",
-        "name" : "Wahrnehmung"
+        "name" : "Wahrnhemung"
       } ]
     }, {
       "id" : "precision",
@@ -86,7 +86,7 @@
       "description" : "Präzision lässt einen Charakter auch weit entfernte oder schwer erkennbare Ziele\ntreffen. Charaktere mit hoher Präzision können auch Handlungen auch durchführen,\nbei denen ihre Sinne nur eingeschränkt zur Verfügung stehen, weil beispielsweise\ndie Sicht auf einen Teil eines Mechanismus verborgen ist.",
       "dependencies" : [ {
         "id" : "perception",
-        "name" : "Wahrnehmung"
+        "name" : "Wahrnhemung"
       }, {
         "id" : "dexterity",
         "name" : "Geschick"
@@ -182,55 +182,36 @@
     "name" : "Taktik",
     "description" : "Ein taktisch kluger Charakter versteht sich auf die kluge Positionierung und\nBewegung im Kampf. Er kann erkennen, wo das Gelände Deckung und freie Sicht auf\nden Feind gewährt und welche Umgebung für seine Seite vorteilhaft und den Gegner\nhinderlich ist. Er kann die Kampfweise seiner Verbündeten beeinflussen und dazu\nbeitragen, dass diese schneller und effektiver Handeln können."
   }, {
-    "id" : "weapon_impact",
+    "id" : "impact_weapon",
     "name" : "Wuchtwaffen",
     "description" : "Wuchtwaffen umfassen eine breite Auswahl an Waffen, die vorrangig durch \nSchlagkraft Schaden verursachen. Dazu zählen Stöcke und Keulen, aber auch\nMorgensterne und gewaltige Kriegshämmer."
   }, {
-    "id" : "weapon_missile",
+    "id" : "missile_weapon",
     "name" : "Wurfwaffen",
     "description" : "Wurfwaffen sind alle Waffen, die zum Werfen geeignet sind. Dies umfasst einfache\nSteine und Steinschleudern sowie auch Wurfsterne, Wurfspeere, Wurfspeere und\nGranaten."
   }, {
-    "id" : "weapon_range",
+    "id" : "range_weapon",
     "name" : "Fernwaffen",
     "description" : "Unter Fernwaffen fallen alle Waffen, die für den Angriff auf weitere Distanz\nausgelegt sind. Dazu gehören Bögen, Armbrüste, Pistolen und Gewehre."
   }, {
-    "id" : "weapon_pole",
+    "id" : "pole_weapon",
     "name" : "Stangenwaffen",
     "description" : "Zu den Stangenwaffen zählen all jene Waffen, die sich durch Reichweite\nauszeichnen. Darunter fallen Stäbe, Speere, Spieße, Gleven und Langäxte."
   }, {
-    "id" : "weapon_blade",
+    "id" : "blade_weapon",
     "name" : "Klingenwaffen",
     "description" : "Klingenwaffen zeichnen sich dadurch aus, dass sie größtenteils aus einer\nscharfen Metallklinge bestehen. Dazu gehören Messer, Schwerter und Säbel."
   } ],
   "talents" : [ {
-    "id" : "fistfight",
-    "name" : "Faustkampf",
-    "description" : "Du kannst ordentlich mit den Fäusten austeilen.",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "melee",
-        "name" : "Nahkampf",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "keen_hearing",
-    "name" : "Scharfer Blick",
-    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
+    "name" : "Scharfes Gehör",
+    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
     "cost" : 4,
     "innate" : true,
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnehmung",
+        "name" : "Wahrnhemung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -264,7 +245,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnehmung",
+        "name" : "Wahrnhemung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -365,7 +346,7 @@
         "level" : 9
       } ],
       "skills" : [ {
-        "id" : "weapon_range",
+        "id" : "range_weapon",
         "name" : "Fernwaffen",
         "level" : 2
       } ],
@@ -391,6 +372,29 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "thieves_language",
+    "name" : "Gaunersprache",
+    "description" : "Du beherschst die Gaunersprache.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 2
+      }, {
+        "id" : "deception",
+        "name" : "Täuschung",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "balance",
     "name" : "Balancieren",
     "description" : "Du kannst auf schmalen Wegen die Balance halten.",
@@ -410,6 +414,25 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "axe_fighting",
+    "name" : "Axtkampf",
+    "description" : "Du kannst mit einer Axt deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "keen_taste",
     "name" : "Feiner Geschmack",
     "description" : "Du hast eine feine Zunge, die unterschiedlichste Geschmäcker unterscheiden kann.",
@@ -418,10 +441,29 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnehmung",
+        "name" : "Wahrnhemung",
         "level" : 9
       } ],
       "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "sign_language",
+    "name" : "Zeichensprache",
+    "description" : "Du beherschst die Zeichensprache.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "precision",
+        "name" : "Präzision",
+        "level" : 7
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 2
+      } ],
       "talents" : [ ]
     }
   }, {
@@ -433,7 +475,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnehmung",
+        "name" : "Wahrnhemung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -515,7 +557,7 @@
         "level" : 9
       } ],
       "skills" : [ {
-        "id" : "weapon_range",
+        "id" : "range_weapon",
         "name" : "Fernwaffen",
         "level" : 2
       } ],
@@ -534,8 +576,27 @@
         "level" : 10
       } ],
       "skills" : [ {
-        "id" : "weapon_range",
+        "id" : "range_weapon",
         "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "fist_fighting",
+    "name" : "Faustkampf",
+    "description" : "Du kannst ordentlich mit den Fäusten austeilen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "melee",
+        "name" : "Nahkampf",
         "level" : 2
       } ],
       "talents" : [ ]
@@ -559,5 +620,407 @@
       } ],
       "talents" : [ ]
     }
-  } ]
+  }, {
+    "id" : "thean_language",
+    "name" : "Thean",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "meerfestian_language",
+    "name" : "Meerfestisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "seeguardian_language",
+    "name" : "Seegardisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "firelandish_language",
+    "name" : "Feuerländisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "westish_language",
+    "name" : "Westländisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "nyrran_language",
+    "name" : "Nyrrsch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "skellan_language",
+    "name" : "Skellanisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "nettlish_language",
+    "name" : "Nisslisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "altavian_language",
+    "name" : "Altavian",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "midlandish_language",
+    "name" : "Middländisch",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  } ],
+  "languages" : [ {
+    "id" : "thean",
+    "name" : "Thean"
+  }, {
+    "id" : "meerfestian",
+    "name" : "Meerfestisch"
+  }, {
+    "id" : "seeguardian",
+    "name" : "Seegardisch"
+  }, {
+    "id" : "firelandish",
+    "name" : "Feuerländisch"
+  }, {
+    "id" : "westish",
+    "name" : "Westländisch"
+  }, {
+    "id" : "nyrran",
+    "name" : "Nyrrsch"
+  }, {
+    "id" : "skellan",
+    "name" : "Skellanisch"
+  }, {
+    "id" : "nettlish",
+    "name" : "Nisslisch"
+  }, {
+    "id" : "altavian",
+    "name" : "Altavian"
+  }, {
+    "id" : "midlandish",
+    "name" : "Middländisch"
+  }, {
+    "id" : "old_language",
+    "name" : "Alte Sprache",
+    "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen."
+  }, {
+    "id" : "sign_language",
+    "name" : "Zeichensprache",
+    "description" : "Du beherschst die Zeichensprache."
+  }, {
+    "id" : "trade_language",
+    "name" : "Handelssprache",
+    "description" : "Du beherschst die Handelssprache."
+  }, {
+    "id" : "thieves_language",
+    "name" : "Gaunersprache",
+    "description" : "Du beherschst die Gaunersprache."
+  } ],
+  "weaponTypes" : [ {
+    "id" : "impact",
+    "name" : "Wuchtwaffe",
+    "description" : "",
+    "subtypes" : [ {
+      "id" : "axe",
+      "name" : "Axt"
+    }, {
+      "id" : "mace",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "hammer",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "stick",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "chain",
+      "name" : "",
+      "description" : ""
+    } ]
+  }, {
+    "id" : "missile",
+    "name" : "Wurfwaffe",
+    "description" : "",
+    "subtypes" : [ {
+      "id" : "slingshot",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "throwing_knive",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "throwing_axe",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "throwing_spear",
+      "name" : "",
+      "description" : ""
+    } ]
+  }, {
+    "id" : "range",
+    "name" : "Fernwaffe",
+    "description" : "",
+    "subtypes" : [ {
+      "id" : "bow",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "crossbow",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "handgun",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "shotgun",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "rifle",
+      "name" : "",
+      "description" : ""
+    } ]
+  }, {
+    "id" : "pole",
+    "name" : "Stangenwaffe",
+    "description" : "",
+    "subtypes" : [ {
+      "id" : "gleve",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "longaxe",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "spear",
+      "name" : "Speer"
+    }, {
+      "id" : "pike",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "lance",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "staff",
+      "name" : "",
+      "description" : ""
+    } ]
+  }, {
+    "id" : "blade",
+    "name" : "Klingenwaffe",
+    "description" : "",
+    "subtypes" : [ {
+      "id" : "knife",
+      "name" : "",
+      "description" : ""
+    }, {
+      "id" : "sword",
+      "name" : "Schwert",
+      "description" : ""
+    }, {
+      "id" : "rapier",
+      "name" : "",
+      "description" : ""
+    } ]
+  } ],
+  "items" : {
+    "equipment" : {
+      "weapons" : [ {
+        "id" : "short_sword",
+        "name" : "Kurzschwert",
+        "cost" : 60,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "blade",
+          "name" : "Klingenwaffe"
+        },
+        "subtype" : {
+          "id" : "sword",
+          "name" : "Schwert"
+        },
+        "reach" : 0.5,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 2,
+            "value" : 4
+          },
+          "bonus" : {
+            "base" : 7,
+            "step" : 3,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "spear",
+        "name" : "Speer",
+        "cost" : 20,
+        "availability" : "VILLAGE",
+        "weight" : 1,
+        "type" : {
+          "id" : "pole",
+          "name" : "Stangenwaffe"
+        },
+        "subtype" : {
+          "id" : "spear",
+          "name" : "Speer"
+        },
+        "reach" : 2.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 8
+          },
+          "bonus" : {
+            "base" : 8,
+            "step" : 3,
+            "increment" : 1
+          }
+        }
+      } ]
+    }
+  }
 }
