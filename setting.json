@@ -243,53 +243,20 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "keen_scent",
-    "name" : "Feiner Geruch",
-    "description" : "Du hast eine feine Nase, mit der du Gerüche aufspüren und unterscheiden kannst.",
-    "cost" : 3,
-    "innate" : true,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnhemung",
-        "level" : 9
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "handgun_shooting",
-    "name" : "Pistolenschießen",
-    "description" : "Du kannst mit einer Pistole deine Ziele treffen.",
-    "cost" : 3,
+    "id" : "short_range_shot",
+    "name" : "Kurzschuss",
+    "description" : "Du erhältst einen Aktionswürfel, wenn du auf kurze Distanz schießt schießt.",
+    "cost" : 4,
     "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "dexterity",
-        "name" : "Geschick",
-        "level" : 9
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 11
       } ],
       "skills" : [ {
         "id" : "range_weapon",
         "name" : "Fernwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "knife_throwing",
-    "name" : "Messerwerfen",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "dexterity",
-        "name" : "Geschick",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "missile_weapon",
-        "name" : "Wurfwaffen",
         "level" : 3
       } ],
       "talents" : [ ]
@@ -337,25 +304,6 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "axe_fighting",
-    "name" : "Axtkampf",
-    "description" : "Du kannst mit einer Axt deine Ziele treffen.",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "impact_weapon",
-        "name" : "Wuchtwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "knife_fighting",
     "name" : "Messerkampf",
     "cost" : 3,
@@ -393,24 +341,6 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "spear_throwing",
-    "name" : "Speerwerfen",
-    "cost" : 2,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "missile_weapon",
-        "name" : "Wurfwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "old_language",
     "name" : "Alte Sprache",
     "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen.",
@@ -431,50 +361,6 @@
         "id" : "old_knowledge",
         "name" : "Altes Wissen"
       } ]
-    }
-  }, {
-    "id" : "spear_fighting",
-    "name" : "Speerkampf",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 8
-      } ],
-      "skills" : [ {
-        "id" : "pole_weapon",
-        "name" : "Stangenwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "lance_riding",
-    "name" : "Lanzenreiten",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "strength",
-        "name" : "Stärke",
-        "level" : 7
-      }, {
-        "id" : "dexterity",
-        "name" : "Geschick",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "pole_weapon",
-        "name" : "Stangenwaffen",
-        "level" : 2
-      }, {
-        "id" : "riding",
-        "name" : "Reiten",
-        "level" : 2
-      } ],
-      "talents" : [ ]
     }
   }, {
     "id" : "crossbow_shooting",
@@ -533,40 +419,18 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "sword_fighting_2h",
-    "name" : "Schwertkampf (zweihändig)",
-    "cost" : 5,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "blade_weapon",
-        "name" : "Klingenwaffen",
-        "level" : 3
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "old_knowledge",
-    "name" : "Altes Wissen",
-    "description" : "Du kennst dich mit der frühen Geschichte der Welt aus.",
+    "id" : "keen_hearing",
+    "name" : "Scharfes Gehör",
+    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
     "cost" : 4,
-    "innate" : false,
+    "innate" : true,
     "requirements" : {
       "attributes" : [ {
-        "id" : "memory",
-        "name" : "Gedächtnis",
-        "level" : 11
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 9
       } ],
-      "skills" : [ {
-        "id" : "history",
-        "name" : "Geschichte",
-        "level" : 3
-      } ],
+      "skills" : [ ],
       "talents" : [ ]
     }
   }, {
@@ -584,40 +448,6 @@
         "id" : "pole_weapon",
         "name" : "Stangenwaffen",
         "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "keen_hearing",
-    "name" : "Scharfes Gehör",
-    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
-    "cost" : 4,
-    "innate" : true,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnhemung",
-        "level" : 9
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "hard_punches",
-    "name" : "Harte Schläge",
-    "description" : "Der Schaden deiner unbewaffneten Angriffe erhöht sich um 1 je 8 Stärke.",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "melee",
-        "name" : "Nahkampf",
-        "level" : 3
       } ],
       "talents" : [ ]
     }
@@ -640,6 +470,449 @@
       "skills" : [ {
         "id" : "blade_weapon",
         "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "middle_range_shot",
+    "name" : "Kernschuss",
+    "description" : "Du erhältst einen Aktionswürfel, wenn du auf mittlere Distanz schießt.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_devices",
+    "name" : "Alte Mechanismen",
+    "description" : "Du verstehst, wie die Mechanismen der alten Welt funktioniert haben und kannst\nversuchen, diese zu verwenden, sofern sie noch intakt sind.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "mechanics",
+        "name" : "Mechanik",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      }, {
+        "id" : "electricity",
+        "name" : "Elektrizität"
+      } ]
+    }
+  }, {
+    "id" : "wire_senews",
+    "name" : "Drahtsehnen",
+    "description" : "Die Sehnen deines Körpers sind stark wie Drahtseile.\nDu kannst dich länger als andere an kleinsten Vorsprüngen festhalten.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "endurance",
+        "name" : "Ausdauer",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "climbing",
+        "name" : "Klettern",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "longaxe_fighting",
+    "name" : "Langaxtkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "powerful_charge",
+    "name" : "Kraftvoller Sturmangriff",
+    "description" : "Dein Stärke-Bonus wird doppelt auf den Schaden angerechnet,\nden du durch einen gelungenen Sturmangriff verursachst.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 13
+      } ],
+      "skills" : [ ],
+      "talents" : [ {
+        "id" : "charging_strike",
+        "name" : "Sturmhieb"
+      } ]
+    }
+  }, {
+    "id" : "mace_fighting",
+    "name" : "Keulenkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_locations",
+    "name" : "Alte Orte",
+    "description" : "Du kennst einige Orte der Alten Zeit und kannst diese möglicherweise finden.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "geography",
+        "name" : "Geographie",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "old_knowledge",
+        "name" : "Altes Wissen"
+      } ]
+    }
+  }, {
+    "id" : "sword_fighting_1h",
+    "name" : "Schwertkampf (einhändig)",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "slingshot_hurling",
+    "name" : "Schleudern",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "archery",
+    "name" : "Bogenschießen",
+    "description" : "Du kannst mit einem Bogen deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 10
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "heart_shot",
+    "name" : "Blattschuss",
+    "description" : "Du kannst vor einem Schuss auf den Torso ankündigen, auf das Herz zu zielen.\nDer Schwierigkeitsgrad für den Trefferwurf wird verdoppelt.\nBei einem Treffer wird der durchbrechende Schaden vervierfacht.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "precision",
+        "name" : "Präzision",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 5
+      } ],
+      "talents" : [ {
+        "id" : "torso_shot",
+        "name" : "Rumpfschuss"
+      } ]
+    }
+  }, {
+    "id" : "torso_shot",
+    "name" : "Rumpfschuss",
+    "description" : "Du erhältst einen Aktionswürfel, wenn du auf den Rumpf schießt.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_scent",
+    "name" : "Feiner Geruch",
+    "description" : "Du hast eine feine Nase, mit der du Gerüche aufspüren und unterscheiden kannst.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "handgun_shooting",
+    "name" : "Pistolenschießen",
+    "description" : "Du kannst mit einer Pistole deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "knife_throwing",
+    "name" : "Messerwerfen",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "axe_fighting",
+    "name" : "Axtkampf",
+    "description" : "Du kannst mit einer Axt deine Ziele treffen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "spear_throwing",
+    "name" : "Speerwerfen",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "missile_weapon",
+        "name" : "Wurfwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "spear_fighting",
+    "name" : "Speerkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "lance_riding",
+    "name" : "Lanzenreiten",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "strength",
+        "name" : "Stärke",
+        "level" : 7
+      }, {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 2
+      }, {
+        "id" : "riding",
+        "name" : "Reiten",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "charging_strike",
+    "name" : "Sturmhieb",
+    "description" : "Du erhältst einen Aktionswürfel für den Angriffswurf bei einem Sturmangriff.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 11
+      }, {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "old_knowledge",
+    "name" : "Altes Wissen",
+    "description" : "Du kennst dich mit der frühen Geschichte der Welt aus.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "memory",
+        "name" : "Gedächtnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "history",
+        "name" : "Geschichte",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "sword_fighting_2h",
+    "name" : "Schwertkampf (zweihändig)",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "hard_punches",
+    "name" : "Harte Schläge",
+    "description" : "Der Schaden deiner unbewaffneten Angriffe erhöht sich um 1 je 8 Stärke.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "melee",
+        "name" : "Nahkampf",
         "level" : 3
       } ],
       "talents" : [ ]
@@ -742,64 +1015,21 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "old_devices",
-    "name" : "Alte Mechanismen",
-    "description" : "Du verstehst, wie die Mechanismen der alten Welt funktioniert haben und kannst\nversuchen, diese zu verwenden, sofern sie noch intakt sind.",
-    "cost" : 2,
+    "id" : "long_range_shot",
+    "name" : "Weitschuss",
+    "description" : "Du erhältst einen Aktionswürfel, wenn du auf weite Distanz schießt.",
+    "cost" : 4,
     "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "insight",
-        "name" : "Erkenntnis",
+        "id" : "perception",
+        "name" : "Wahrnhemung",
         "level" : 13
       } ],
       "skills" : [ {
-        "id" : "mechanics",
-        "name" : "Mechanik",
-        "level" : 5
-      } ],
-      "talents" : [ {
-        "id" : "old_knowledge",
-        "name" : "Altes Wissen"
-      }, {
-        "id" : "electricity",
-        "name" : "Elektrizität"
-      } ]
-    }
-  }, {
-    "id" : "wire_senews",
-    "name" : "Drahtsehnen",
-    "description" : "Die Sehnen deines Körpers sind stark wie Drahtseile.\nDu kannst dich länger als andere an kleinsten Vorsprüngen festhalten.",
-    "cost" : 2,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "endurance",
-        "name" : "Ausdauer",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "climbing",
-        "name" : "Klettern",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "longaxe_fighting",
-    "name" : "Langaxtkampf",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "pole_weapon",
-        "name" : "Stangenwaffen",
-        "level" : 3
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 4
       } ],
       "talents" : [ ]
     }
@@ -837,8 +1067,23 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "mace_fighting",
-    "name" : "Keulenkampf",
+    "id" : "keen_sight",
+    "name" : "Scharfer Blick",
+    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
+    "cost" : 5,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnhemung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "gleve_fighting",
+    "name" : "Glevenkampf",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -848,8 +1093,8 @@
         "level" : 9
       } ],
       "skills" : [ {
-        "id" : "impact_weapon",
-        "name" : "Wuchtwaffen",
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
         "level" : 2
       } ],
       "talents" : [ ]
@@ -873,97 +1118,6 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "gleve_fighting",
-    "name" : "Glevenkampf",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "pole_weapon",
-        "name" : "Stangenwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "keen_sight",
-    "name" : "Scharfer Blick",
-    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
-    "cost" : 5,
-    "innate" : true,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnhemung",
-        "level" : 9
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "old_locations",
-    "name" : "Alte Orte",
-    "description" : "Du kennst einige Orte der Alten Zeit und kannst diese möglicherweise finden.",
-    "cost" : 4,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "insight",
-        "name" : "Erkenntnis",
-        "level" : 13
-      } ],
-      "skills" : [ {
-        "id" : "geography",
-        "name" : "Geographie",
-        "level" : 5
-      } ],
-      "talents" : [ {
-        "id" : "old_knowledge",
-        "name" : "Altes Wissen"
-      } ]
-    }
-  }, {
-    "id" : "sword_fighting_1h",
-    "name" : "Schwertkampf (einhändig)",
-    "cost" : 5,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 8
-      } ],
-      "skills" : [ {
-        "id" : "blade_weapon",
-        "name" : "Klingenwaffen",
-        "level" : 3
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "slingshot_hurling",
-    "name" : "Schleudern",
-    "cost" : 2,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "dexterity",
-        "name" : "Geschick",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "missile_weapon",
-        "name" : "Wurfwaffen",
-        "level" : 3
-      } ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "trade_language",
     "name" : "Handelssprache",
     "description" : "Du beherschst die Handelssprache.",
@@ -983,23 +1137,26 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "archery",
-    "name" : "Bogenschießen",
-    "description" : "Du kannst mit einem Bogen deine Ziele treffen.",
+    "id" : "charging_impact",
+    "name" : "Sturmbrecher",
+    "description" : "Du erhältst einen Aktionswürfel für den Angriffswurf bei einem Sturmangriff,\nwenn du mit einer Wuchtwaffe angreifst.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "dexterity",
-        "name" : "Geschick",
-        "level" : 10
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 13
       } ],
       "skills" : [ {
-        "id" : "range_weapon",
-        "name" : "Fernwaffen",
-        "level" : 2
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 3
       } ],
-      "talents" : [ ]
+      "talents" : [ {
+        "id" : "charging_strike",
+        "name" : "Sturmhieb"
+      } ]
     }
   }, {
     "id" : "thean_language",
