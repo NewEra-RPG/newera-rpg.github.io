@@ -1,1 +1,0 @@
-{"version":3,"sources":["./styles.scss"],"names":[],"mappings":";AAEA;EACE;AAAF,C","file":"styles.css","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');\n\nbody {\n  font-family: 'Crimson Text', serif;\n}\n"],"sourceRoot":"webpack:///"}
