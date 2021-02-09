@@ -22,7 +22,7 @@
       "description" : "Gedächtnis ermöglicht einem Charakter, sich Informationen aneignen und wieder\nabrufen zu können. Charaktere mit einem guten Gedächtnis können große Mengen\nvermeintlich nutzlosen Wissens aufnehmen und dies jahrelang mit sich\nherumtragen, bis sich schließlich eine Gelegenheit bietet, es nutzbringend\neinzusetzen."
     }, {
       "id" : "perception",
-      "name" : "Wahrnhemung",
+      "name" : "Wahrnehmung",
       "description" : "Wahrnehmung ist die Gesamtheit aller Sinne, mit deren Hilfe ein Charakter die\nWelt erlebt. Durch ihre Wahrnehmung erkennen Charaktere Gefahren frühzeitig,\nfinden Gegenstände als auch Jagdbeute und unterscheiden zwischen lebenspendender\nNahrung und tödlichem Gift."
     } ],
     "secondary" : [ {
@@ -78,7 +78,7 @@
         "name" : "Gedächtnis"
       }, {
         "id" : "perception",
-        "name" : "Wahrnhemung"
+        "name" : "Wahrnehmung"
       } ]
     }, {
       "id" : "precision",
@@ -86,7 +86,7 @@
       "description" : "Präzision lässt einen Charakter auch weit entfernte oder schwer erkennbare Ziele\ntreffen. Charaktere mit hoher Präzision können auch Handlungen auch durchführen,\nbei denen ihre Sinne nur eingeschränkt zur Verfügung stehen, weil beispielsweise\ndie Sicht auf einen Teil eines Mechanismus verborgen ist.",
       "dependencies" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung"
+        "name" : "Wahrnehmung"
       }, {
         "id" : "dexterity",
         "name" : "Geschick"
@@ -427,7 +427,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung",
+        "name" : "Wahrnehmung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -483,7 +483,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung",
+        "name" : "Wahrnehmung",
         "level" : 11
       } ],
       "skills" : [ {
@@ -718,7 +718,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung",
+        "name" : "Wahrnehmung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -1023,7 +1023,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung",
+        "name" : "Wahrnehmung",
         "level" : 13
       } ],
       "skills" : [ {
@@ -1060,7 +1060,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung",
+        "name" : "Wahrnehmung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -1075,7 +1075,7 @@
     "requirements" : {
       "attributes" : [ {
         "id" : "perception",
-        "name" : "Wahrnhemung",
+        "name" : "Wahrnehmung",
         "level" : 9
       } ],
       "skills" : [ ],
@@ -1160,7 +1160,7 @@
     }
   }, {
     "id" : "thean_language",
-    "name" : "Thean",
+    "name" : "Theanisch",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1250,7 +1250,7 @@
     }
   }, {
     "id" : "nyrran_language",
-    "name" : "Nyrrsch",
+    "name" : "Nyrrisch",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1304,7 +1304,7 @@
     }
   }, {
     "id" : "altavian_language",
-    "name" : "Altavian",
+    "name" : "Altavianisch",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1341,7 +1341,7 @@
   } ],
   "languages" : [ {
     "id" : "thean",
-    "name" : "Thean"
+    "name" : "Theanisch"
   }, {
     "id" : "meerfestian",
     "name" : "Meerfestisch"
@@ -1356,7 +1356,7 @@
     "name" : "Westländisch"
   }, {
     "id" : "nyrran",
-    "name" : "Nyrrsch"
+    "name" : "Nyrrisch"
   }, {
     "id" : "skellan",
     "name" : "Skellanisch"
@@ -1365,7 +1365,7 @@
     "name" : "Nisslisch"
   }, {
     "id" : "altavian",
-    "name" : "Altavian"
+    "name" : "Altavianisch"
   }, {
     "id" : "midlandish",
     "name" : "Middländisch"
