@@ -262,6 +262,28 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "beckon_person",
+    "name" : "Person Anlocken",
+    "description" : "Du kannst Personen dazu bringen, auf dich zuzukommen, um zu hören, was du zu sagen hast.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "deception",
+        "name" : "Täuschung",
+        "level" : 2
+      } ],
+      "talents" : [ {
+        "id" : "command_attention",
+        "name" : "Aufmerksamkeit Einfordern"
+      } ]
+    }
+  }, {
     "id" : "thieves_language",
     "name" : "Gaunersprache",
     "description" : "Du beherschst die Gaunersprache.",
@@ -300,6 +322,33 @@
         "id" : "acrobatics",
         "name" : "Akrobatik",
         "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "spread_rumors",
+    "name" : "Gerüchte Streuen",
+    "description" : "Du kannst Gerüchte über jemanden unauffällig in Gespräche einfliesen lassen.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "deception",
+        "name" : "Täuschung",
+        "level" : 2
+      }, {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 2
+      }, {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 1
       } ],
       "talents" : [ ]
     }
@@ -355,7 +404,7 @@
       "skills" : [ {
         "id" : "language",
         "name" : "Sprache",
-        "level" : 3
+        "level" : 4
       } ],
       "talents" : [ {
         "id" : "old_knowledge",
@@ -725,6 +774,29 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "collect_rumors",
+    "name" : "Gerüchte Sammeln",
+    "description" : "Du kannst Gerüchte über bestimmte Personen oder Ereignisse aufschnappen,\nindem du dich mit den passenden Personen unterhältst.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "memory",
+        "name" : "Gedächtnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 3
+      }, {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "handgun_shooting",
     "name" : "Pistolenschießen",
     "description" : "Du kannst mit einer Pistole deine Ziele treffen.",
@@ -881,6 +953,29 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "first_aid",
+    "name" : "Erste Hilfe",
+    "description" : "man hilft Leuten di wo sterben tun.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "crafting",
+        "name" : "Handwerk",
+        "level" : 11
+      }, {
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "medicine",
+        "name" : "Medizin",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "sword_fighting_2h",
     "name" : "Schwertkampf (zweihändig)",
     "cost" : 5,
@@ -895,6 +990,25 @@
         "id" : "blade_weapon",
         "name" : "Klingenwaffen",
         "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "empathy",
+    "name" : "Einfühlsamkeit",
+    "description" : "Du kannst die Gefühle anderer Menschen verstehen.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 2
       } ],
       "talents" : [ ]
     }
@@ -914,6 +1028,25 @@
         "id" : "melee",
         "name" : "Nahkampf",
         "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "command_attention",
+    "name" : "Aufmerksamkeit Einfordern",
+    "description" : "Du kannst Personen dazu bringen, dir kurz Aufmerksamkeit zu schenken.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 2
       } ],
       "talents" : [ ]
     }
@@ -1118,13 +1251,40 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "filter_rumors",
+    "name" : "Gerüchte Aussieben",
+    "description" : "Du kannst den Wahrheitsgehalt aufgeschnappter Gerüchte einschätzen.",
+    "cost" : 6,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "alertness",
+        "name" : "Aufmerksamkeit",
+        "level" : 3
+      }, {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "trade_language",
     "name" : "Handelssprache",
     "description" : "Du beherschst die Handelssprache.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
-      "attributes" : [ ],
+      "attributes" : [ {
+        "id" : "memory",
+        "name" : "Gedächtnis",
+        "level" : 8
+      } ],
       "skills" : [ {
         "id" : "language",
         "name" : "Sprache",
@@ -1132,9 +1292,31 @@
       }, {
         "id" : "trading",
         "name" : "Handel",
-        "level" : 1
+        "level" : 2
       } ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "read_face",
+    "name" : "Gesicht Lesen",
+    "description" : "Du kannst am Gesicht deines Gegenübers seine Emotionen abschätzen,\nselbst wenn es derjenige sie zu verbergen versucht.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "alertness",
+        "name" : "Aufmerksamkeit",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "empathy",
+        "name" : "Einfühlsamkeit"
+      } ]
     }
   }, {
     "id" : "charging_impact",
