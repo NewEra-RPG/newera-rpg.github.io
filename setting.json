@@ -1574,7 +1574,8 @@
     "description" : "",
     "subtypes" : [ {
       "id" : "axe",
-      "name" : "Axt"
+      "name" : "Axt",
+      "description" : ""
     }, {
       "id" : "mace",
       "name" : "Keule",
@@ -1691,6 +1692,60 @@
   "items" : {
     "equipment" : {
       "weapons" : [ {
+        "id" : "spear",
+        "name" : "Speer",
+        "cost" : 25,
+        "availability" : "VILLAGE",
+        "weight" : 1,
+        "type" : {
+          "id" : "pole",
+          "name" : "Stangenwaffe"
+        },
+        "subtype" : {
+          "id" : "spear",
+          "name" : "Speer"
+        },
+        "reach" : 2.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 8
+          },
+          "bonus" : {
+            "base" : 8,
+            "step" : 3,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "two_handed_sword",
+        "name" : "Zweihänder",
+        "cost" : 600,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "blade",
+          "name" : "Klingenwaffe"
+        },
+        "subtype" : {
+          "id" : "sword_2h",
+          "name" : "Schwert (zweihändig)"
+        },
+        "reach" : 1.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 2,
+            "value" : 10
+          },
+          "bonus" : {
+            "base" : 11,
+            "step" : 1,
+            "increment" : 1
+          }
+        }
+      }, {
         "id" : "short_sword",
         "name" : "Kurzschwert",
         "cost" : 60,
@@ -1718,29 +1773,218 @@
           }
         }
       }, {
-        "id" : "spear",
-        "name" : "Speer",
-        "cost" : 20,
-        "availability" : "VILLAGE",
+        "id" : "broad_sword",
+        "name" : "Breitschwert",
+        "cost" : 250,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "blade",
+          "name" : "Klingenwaffe"
+        },
+        "subtype" : {
+          "id" : "sword_1h",
+          "name" : "Schwert (einhändig)"
+        },
+        "reach" : 1.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 2,
+            "value" : 6
+          },
+          "bonus" : {
+            "base" : 8,
+            "step" : 3,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "long_bow",
+        "name" : "Langbogen",
+        "cost" : 120,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "range",
+          "name" : "Fernwaffe"
+        },
+        "subtype" : {
+          "id" : "bow",
+          "name" : "Bogen"
+        },
+        "reach" : 0.0,
+        "range" : 25,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 12
+          },
+          "bonus" : {
+            "base" : 10,
+            "step" : 2,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "two_handed_axe",
+        "name" : "Zweihandaxt",
+        "cost" : 50,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "impact",
+          "name" : "Wuchtwaffe"
+        },
+        "subtype" : {
+          "id" : "axe",
+          "name" : "Axt"
+        },
+        "reach" : 1.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 2,
+            "value" : 10
+          },
+          "bonus" : {
+            "base" : 12,
+            "step" : 3,
+            "increment" : 2
+          }
+        }
+      }, {
+        "id" : "long_sword",
+        "name" : "Langschwert",
+        "cost" : 400,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "blade",
+          "name" : "Klingenwaffe"
+        },
+        "subtype" : {
+          "id" : "sword_2h",
+          "name" : "Schwert (zweihändig)"
+        },
+        "reach" : 1.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 2,
+            "value" : 8
+          },
+          "bonus" : {
+            "base" : 10,
+            "step" : 1,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "walking_staff",
+        "name" : "Wanderstab",
+        "cost" : 10,
+        "availability" : "HINTERLAND",
         "weight" : 1,
         "type" : {
           "id" : "pole",
           "name" : "Stangenwaffe"
         },
         "subtype" : {
-          "id" : "spear",
-          "name" : "Speer"
+          "id" : "staff",
+          "name" : "Stab"
         },
         "reach" : 2.0,
         "range" : 0,
         "damage" : {
           "dice" : {
             "amount" : 1,
-            "value" : 8
+            "value" : 4
           },
           "bonus" : {
             "base" : 8,
+            "step" : 1,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "walking_stick",
+        "name" : "Wanderstock",
+        "cost" : 10,
+        "availability" : "HINTERLAND",
+        "weight" : 1,
+        "type" : {
+          "id" : "impact",
+          "name" : "Wuchtwaffe"
+        },
+        "subtype" : {
+          "id" : "stick",
+          "name" : "Stock"
+        },
+        "reach" : 1.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 4
+          },
+          "bonus" : {
+            "base" : 7,
             "step" : 3,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "war_bow",
+        "name" : "Kriegsbogen",
+        "cost" : 250,
+        "availability" : "CITY",
+        "weight" : 1,
+        "type" : {
+          "id" : "range",
+          "name" : "Fernwaffe"
+        },
+        "subtype" : {
+          "id" : "bow",
+          "name" : "Bogen"
+        },
+        "reach" : 0.0,
+        "range" : 45,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 12
+          },
+          "bonus" : {
+            "base" : 12,
+            "step" : 1,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "hunting_bow",
+        "name" : "Jagdbogen",
+        "cost" : 50,
+        "availability" : "VILLAGE",
+        "weight" : 1,
+        "type" : {
+          "id" : "range",
+          "name" : "Fernwaffe"
+        },
+        "subtype" : {
+          "id" : "bow",
+          "name" : "Bogen"
+        },
+        "reach" : 0.0,
+        "range" : 15,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 10
+          },
+          "bonus" : {
+            "base" : 8,
+            "step" : 4,
             "increment" : 1
           }
         }
