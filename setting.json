@@ -102,9 +102,9 @@
     "name" : "Aufmerksamkeit",
     "description" : "Ein aufmerksamer Charakter findet zielsicher, was er sucht und\ngelegentlich auch mehr oder weniger interessantes, mit dem er nicht gerechnet\nhätte. Er erkennt auch feinsinnige Hinweise wie ungewöhnlich beschaffene oder\nfehlplatzierte Gegenstände, sowie Spuren von Lebenszeichen und Bewegung wie\naufgewirbelte Staubkörner oder die Wärme einer kürzlich gelöschten Kerze."
   }, {
-    "id" : "chemistry",
-    "name" : "Chemie",
-    "description" : "Ein Charakter, der Chemie beherrscht, kann verschiedenste Inhaltsstoffe von\nPflanzen, aber aus tierischen oder mineralischen Quellen extrahieren, mischen\nund veredeln. Durch diese Kenntnisse lassen sich vom einfachen Kräutertee über\nalkoholische Getränke bis zu medizinischen Tinkturen und Giften allerlei\nherstellen, was Leib und Seele nützt oder schadet. Die endgültige Form des\nHergestellten können Tränke, Tinkturen, Salben und weiteres sein."
+    "id" : "blending",
+    "name" : "Mischen",
+    "description" : "Ein Charakter, der Mischen beherrscht, kann verschiedenste Inhaltsstoffe von\nPflanzen, aber aus tierischen oder mineralischen Quellen extrahieren, mischen\nund veredeln. Durch diese Kenntnisse lassen sich vom einfachen Kräutertee über\nalkoholische Getränke bis zu medizinischen Tinkturen und Giften allerlei\nherstellen, was Leib und Seele nützt oder schadet. Die endgültige Form des\nHergestellten können Tränke, Tinkturen, Salben und weiteres sein."
   }, {
     "id" : "driving",
     "name" : "Fahren",
@@ -118,9 +118,9 @@
     "name" : "Gesellschaft",
     "description" : "An Geselligkeit gewöhnte Charaktere finden sich leichter in der Gesellschaft\nzurecht und sind in der Lage, die Intentionen ihrer Mitmenschen zu deuten. Sie\nkönnen dies nutzen, um sich selbst vor böswilligen Übergriffen oder\nunvorteilhaften Abmachungen zu schützen. Ebenso sind sie fähig, andere zu\nverstehen, Trost zu spenden und zu motivieren, als auch ihre\nVerhandlungsposition durch geschicktes Ausnutzen von Schwächen zu verbessern."
   }, {
-    "id" : "medicine",
-    "name" : "Medizin",
-    "description" : "Ein in Medizin geschulter Charakter kann erkennen, was einen lebenden Körper\nplagen oder wie ein Verstorbener sein Ende gefunden haben mag. Er kann\nKrankheiten kurieren, Wunden verbinden, gebrochene Knochen richten und auch\nsonstige Leiden lindern. Sein Wissen über die körperliche Zerbrechlichkeit kann\ner aber ebenso einsetzen, um grauenvolle Schmerzen und unheilbaren Schaden zu\nverursachen."
+    "id" : "healing",
+    "name" : "Heilkunde",
+    "description" : "Ein in Heilkunde geschulter Charakter kann erkennen, was einen lebenden Körper\nplagen oder wie ein Verstorbener sein Ende gefunden haben mag. Er kann\nKrankheiten kurieren, Wunden verbinden, gebrochene Knochen richten und auch\nsonstige Leiden lindern. Sein Wissen über die körperliche Zerbrechlichkeit kann\ner aber ebenso einsetzen, um grauenvolle Schmerzen und unheilbaren Schaden zu\nverursachen."
   }, {
     "id" : "stealth",
     "name" : "Heimlichkeit",
@@ -143,24 +143,24 @@
     "description" : "Ein Charakter, der in Metallverarbeitung geübt ist, kann metallische\nGegenstände wie Werkzeuge und verschiedenste Waffen wie Schwerter, Speer- und\nPfeilspitzen sowie Rüstungen aus Metallschuppen und -platten oder Kettengeflecht\nherstellen. Mit ausreichend hochwertigem Metall und einer Werkstatt kann er\nsogar gepanzerte Fahrzeuge und Kampfmaschinen bauen. Er kann den Wert und\nZustand metallischer Gegenstände einschätzen."
   }, {
     "id" : "mechanics",
-    "name" : "Mechanik",
+    "name" : "Mechanismen",
     "description" : "Ein Charakter, der die Funktionsweise von Mechanismen versteht, kann mechanische\nGerätschaften ein- oder ausschalten, ihre Arbeitsweise in seinem Ermessen\nbeeinflussen, sie sabotieren oder reparieren. Während er einfache Mechanismen\nintuitiv bedienen kann, muss er komplexere Maschinen vorher eingehend studieren.\nEr ist außerdem in der Lage, Bedienungs- und Bauanleitungen sowie schematische\nZeichnungen aller Art zu interpretieren."
   }, {
-    "id" : "biology",
-    "name" : "Biologie",
-    "description" : "Ein in Biologie geschulter Charakter ist fähig, verschiedenste Pflanzen selbst\nanzubauen oder ausfindig zu machen und eindeutig zu identifizieren. Er kennt\nihre Wirkstoffe und weiß, wie diese als Nahrungs- oder Heilmittel aber ebenso\nals Gift verwendet werden können. Ein Kräuterkundiger kann neben der Kenntnis\nüber einheimische Pflanzen auch exotische Gewächse ihrer ungefähren Herkunft\nzuordnen."
+    "id" : "nature",
+    "name" : "Naturkunde",
+    "description" : "Ein naturkundiger Charakter findet sich in der Natur zurecht.\nEr beherrscht Techniken, um im Freien zu überleben und dabei möglichst wenige Spuren zu hinterlassen."
   }, {
-    "id" : "geography",
-    "name" : "Geographie",
-    "description" : "..."
+    "id" : "world",
+    "name" : "Weltkunde",
+    "description" : "Ein in Weltkunde geschulter Charakter kennt die groben Umrisse seiner Heimatwelt.\nEr kann Regionen und Städte benennen und deren Eigenheiten und Bräuche zuordnen,\naber ebenso die Beschaffenheit von Landschaften und deren Merkmale.\nEr kann wichtige Informationen aus seiner Umwelt ablesen und dadurch seinen Weg finden,\nsich auf unwidriges Wetter vorbereiten und abschätzen, welche Pfade sicher sind."
   }, {
     "id" : "swimming",
     "name" : "Schwimmen",
     "description" : "Ein Charakter, der das Schwimmen meistert, kann sich effizient in und unter\nWasser fortbewegen. Er verfügt über ein großes Lungenvolumen, um für längere\nZeit unterzutauchen und beherrscht verschiedene Schwimmtechniken. Mit diesen\nkann er sowohl kurze als auch lange Strecken schnell und mit minimaler\nAnstrengung zurücklegen und sich zumindest teilweise der Strömung widersetzen."
   }, {
-    "id" : "riding",
-    "name" : "Reiten",
-    "description" : "Ein Charakter, der im Reiten geübt ist, kann sich auf Reittieren – üblicherweise\nPferden – im Sattel halten und auf deren Rücken längere Reisen bestreiten, in\nhalsbrecherischem Galopp vorwärts preschen und dabei auch unter widrigen\nBedingungen die Kontrolle behalten. Er kann seine erhöhte Position effektiv im\nKampf nutzen und gewagte Manöver vollführen um Schaden von sich und seinem\nReittier abzuhalten."
+    "id" : "animals",
+    "name" : "Tierkunde",
+    "description" : "Ein Charakter, der in Tierkunde geübt ist, kann die Befindlichkeiten von Tieren einschätzen,\nderen Verhalten abschätzen und beeinflussen, sowie sich um deren Wohlergehen kümmern.\nTierkunde kann genutzt werden, um Tiere aufzuspüren und zu jagen, aber auch um sie zu\nkontrollieren, auszubilden und zu wertvollen Verbündeten abzurichten."
   }, {
     "id" : "tailoring",
     "name" : "Stoffverarbeitung",
@@ -184,7 +184,7 @@
   }, {
     "id" : "impact_weapon",
     "name" : "Wuchtwaffen",
-    "description" : "Wuchtwaffen umfassen eine breite Auswahl an Waffen, die vorrangig durch \nSchlagkraft Schaden verursachen. Dazu zählen Stöcke und Keulen, aber auch\nMorgensterne und gewaltige Kriegshämmer."
+    "description" : "Wuchtwaffen umfassen eine breite Auswahl an Waffen,\ndie vorrangig durch Schlagkraft Schaden verursachen.\nDazu zählen Stöcke und Keulen, aber auch Morgensterne und gewaltige Kriegshämmer."
   }, {
     "id" : "missile_weapon",
     "name" : "Wurfwaffen",
@@ -284,6 +284,25 @@
       } ]
     }
   }, {
+    "id" : "entice_animal",
+    "name" : "Tier Anlocken",
+    "description" : "Du kannst Tiere dazu ermutigen, sich dir zu nähern.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "animals",
+        "name" : "Tierkunde",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "thieves_language",
     "name" : "Gaunersprache",
     "description" : "Du beherschst die Gaunersprache.",
@@ -371,6 +390,47 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "customs",
+    "name" : "Brauchtum",
+    "description" : "Du kennst dich besonders gut mit Bräuchen wie Umgangsformen, Feiertagen und Traditionen aus.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "memory",
+        "name" : "Gedächtnis",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "native_customs",
+    "name" : "Heimatliches Brauchtum",
+    "description" : "Du bist besonders bewandert im Brauchtum deiner Heimat und kennst dich auch mit obskuren\nTraditionen und deren Herkunft aus.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "history",
+        "name" : "Geschichte",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "customs",
+        "name" : "Brauchtum"
+      } ]
+    }
+  }, {
     "id" : "sign_language",
     "name" : "Zeichensprache",
     "description" : "Du beherschst die Zeichensprache.",
@@ -450,6 +510,29 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "bait_animal",
+    "name" : "Tier Ködern",
+    "description" : "Du verstehst dich darauf, Tiere durch Futter oder andere Köder an bestimmte Orte und in Fallen zu locken.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "crafting",
+        "name" : "Handwerk",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "animals",
+        "name" : "Tierkunde",
+        "level" : 2
+      }, {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "stick_fighting",
     "name" : "Stockkampf",
     "cost" : 2,
@@ -501,6 +584,50 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "impale_animal",
+    "name" : "Tier Aufspießen",
+    "description" : "Du erhältst einen Aktionswürfel, wenn du ein Tier mit einer Stangenwaffe angreifst.",
+    "cost" : 8,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 4
+      } ],
+      "talents" : [ {
+        "id" : "slay_animal",
+        "name" : "Tier Erlegen"
+      } ]
+    }
+  }, {
+    "id" : "foreign_customs",
+    "name" : "Fremdes Brauchtum",
+    "description" : "Du bist bewandert im Brauchtum fremder Kulturen und gewöhnst dich schnell an neue Sitten.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "language",
+        "name" : "Sprache",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "customs",
+        "name" : "Brauchtum"
+      } ]
+    }
+  }, {
     "id" : "rapier_fighting",
     "name" : "Degenfechten",
     "description" : "",
@@ -522,6 +649,32 @@
         "level" : 3
       } ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "assess_campground",
+    "name" : "Lagerplatz Einschätzen",
+    "description" : "Du kannst einschätzen, ob ein Platz geeignet ist, um ein Lager aufzuschlagen und worauf man dabei achten sollte.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 3
+      }, {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "assess_environment",
+        "name" : "Umgebung Einschätzen"
+      } ]
     }
   }, {
     "id" : "middle_range_shot",
@@ -556,7 +709,7 @@
       } ],
       "skills" : [ {
         "id" : "mechanics",
-        "name" : "Mechanik",
+        "name" : "Mechanismen",
         "level" : 5
       } ],
       "talents" : [ {
@@ -601,6 +754,29 @@
         "id" : "pole_weapon",
         "name" : "Stangenwaffen",
         "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "light_fire",
+    "name" : "Feuer Entfachen",
+    "description" : "Du kannst mit einfachen Hilfsmitteln und bei widrigen Bedingungen wie Wind und Nässe Feuer entfachen.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "crafting",
+        "name" : "Handwerk",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 2
+      }, {
+        "id" : "woodworking",
+        "name" : "Holzverarbeitung",
+        "level" : 1
       } ],
       "talents" : [ ]
     }
@@ -653,8 +829,8 @@
         "level" : 13
       } ],
       "skills" : [ {
-        "id" : "geography",
-        "name" : "Geographie",
+        "id" : "world",
+        "name" : "Weltkunde",
         "level" : 5
       } ],
       "talents" : [ {
@@ -718,6 +894,25 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "assess_environment",
+    "name" : "Umgebung Einschätzen",
+    "description" : "Du kannst einschätzen, auf welche natürlichen Gefahren man in einer bestimmten Umgebung achten muss.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "heart_shot",
     "name" : "Blattschuss",
     "description" : "Du kannst vor einem Schuss auf den Torso ankündigen, auf das Herz zu zielen.\nDer Schwierigkeitsgrad für den Trefferwurf wird verdoppelt.\nBei einem Treffer wird der durchbrechende Schaden vervierfacht.",
@@ -738,6 +933,25 @@
         "id" : "torso_shot",
         "name" : "Rumpfschuss"
       } ]
+    }
+  }, {
+    "id" : "herbalism",
+    "name" : "Kräuterkunde",
+    "description" : "Ein in Kräuterkunde geschulter Charakter ist fähig, verschiedenste Pflanzen selbst\nanzubauen oder ausfindig zu machen und eindeutig zu identifizieren. Er kennt\nihre Wirkstoffe und weiß, wie diese als Nahrungs- oder Heilmittel aber ebenso\nals Gift verwendet werden können. Ein Kräuterkundiger kann neben der Kenntnis\nüber einheimische Pflanzen auch exotische Gewächse ihrer ungefähren Herkunft\nzuordnen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "crafting",
+        "name" : "Handwerk",
+        "level" : 12
+      } ],
+      "skills" : [ {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 2
+      } ],
+      "talents" : [ ]
     }
   }, {
     "id" : "torso_shot",
@@ -772,6 +986,50 @@
       } ],
       "skills" : [ ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "riding",
+    "name" : "Reiten",
+    "description" : "Ein Charakter, der im Reiten geübt ist, kann sich auf Reittieren – üblicherweise\nPferden – im Sattel halten und auf deren Rücken längere Reisen bestreiten, in\nhalsbrecherischem Galopp vorwärts preschen und dabei auch unter widrigen\nBedingungen die Kontrolle behalten. Er kann seine erhöhte Position effektiv im\nKampf nutzen und gewagte Manöver vollführen um Schaden von sich und seinem\nReittier abzuhalten.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 8
+      }, {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 7
+      } ],
+      "skills" : [ ],
+      "talents" : [ {
+        "id" : "guide_animal",
+        "name" : "Tier Führen"
+      } ]
+    }
+  }, {
+    "id" : "find_path",
+    "name" : "Weg Finden",
+    "description" : "Du kannst anhand von Landschaftsmerkmalen deinen Weg finden.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "world",
+        "name" : "Weltkunde",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "assess_path",
+        "name" : "Weg Einschätzen"
+      } ]
     }
   }, {
     "id" : "collect_rumors",
@@ -830,6 +1088,29 @@
         "id" : "missile_weapon",
         "name" : "Wurfwaffen",
         "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "collect_firewood",
+    "name" : "Feuerholz Sammeln",
+    "description" : "Du kannst geeignetes Feuerholz sammeln, um ein Feuer zu entfachen und lange am Brennen zu halten,\nsofern in deiner Umgebung etwas zu finden ist.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "woodworking",
+        "name" : "Holzverarbeitung",
+        "level" : 2
+      }, {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 1
       } ],
       "talents" : [ ]
     }
@@ -907,12 +1188,11 @@
         "id" : "pole_weapon",
         "name" : "Stangenwaffen",
         "level" : 2
-      }, {
-        "id" : "riding",
-        "name" : "Reiten",
-        "level" : 2
       } ],
-      "talents" : [ ]
+      "talents" : [ {
+        "id" : "riding",
+        "name" : "Reiten"
+      } ]
     }
   }, {
     "id" : "charging_strike",
@@ -955,8 +1235,8 @@
   }, {
     "id" : "first_aid",
     "name" : "Erste Hilfe",
-    "description" : "man hilft Leuten di wo sterben tun.",
-    "cost" : 4,
+    "description" : "Erste Hilfe erlaubt es, einen verletzten Charakter zu stabilisieren,\nleichte Wunden zu behandeln und das Aufreißen größerer Wunden zu verhindern.",
+    "cost" : 3,
     "innate" : false,
     "requirements" : {
       "attributes" : [ {
@@ -969,8 +1249,8 @@
         "level" : 9
       } ],
       "skills" : [ {
-        "id" : "medicine",
-        "name" : "Medizin",
+        "id" : "healing",
+        "name" : "Heilkunde",
         "level" : 1
       } ],
       "talents" : [ ]
@@ -1009,6 +1289,48 @@
         "id" : "society",
         "name" : "Gesellschaft",
         "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "slay_animal",
+    "name" : "Tier Erlegen",
+    "description" : "Du erhältst einen zustätzlichen Aktionswürfel für Angriffe gegen Tiere.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "healing",
+        "name" : "Heilkunde",
+        "level" : 2
+      }, {
+        "id" : "animals",
+        "name" : "Tierkunde",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "calm_animal",
+    "name" : "Tier Beruhigen",
+    "description" : "Du kannst aufgebrachte Tiere durch deine Körpersprache und Stimme beruhigen\nund sie davon abhalten, zu fliehen oder aus Angst anzugreifen.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "animals",
+        "name" : "Tierkunde",
+        "level" : 1
       } ],
       "talents" : [ ]
     }
@@ -1079,18 +1401,40 @@
       } ],
       "skills" : [ {
         "id" : "mechanics",
-        "name" : "Mechanik",
+        "name" : "Mechanismen",
         "level" : 3
       }, {
         "id" : "metalworking",
         "name" : "Metallverarbeitung",
         "level" : 1
       }, {
-        "id" : "chemistry",
-        "name" : "Chemie",
+        "id" : "blending",
+        "name" : "Mischen",
         "level" : 1
       } ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "shoot_animal",
+    "name" : "Tier Schießen",
+    "description" : "Du erhältst einen Aktionswürfel, wenn du ein Tier mit einer Fernwaffe angreifst.",
+    "cost" : 8,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "precision",
+        "name" : "Präzision",
+        "level" : 13
+      } ],
+      "skills" : [ {
+        "id" : "range_weapon",
+        "name" : "Fernwaffen",
+        "level" : 4
+      } ],
+      "talents" : [ {
+        "id" : "slay_animal",
+        "name" : "Tier Erlegen"
+      } ]
     }
   }, {
     "id" : "booming_voice",
@@ -1106,6 +1450,32 @@
       } ],
       "skills" : [ ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "assess_waters",
+    "name" : "Gewässer Einschätzen",
+    "description" : "Du kannst einschätzen, wie sicher es ist, ein Gewässer zu überqueren, darin zu schwimmen oder es zu befahren.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "swimming",
+        "name" : "Schwimmen",
+        "level" : 3
+      }, {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "assess_environment",
+        "name" : "Umgebung Einschätzen"
+      } ]
     }
   }, {
     "id" : "hammer_fighting",
@@ -1167,6 +1537,32 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "assess_path",
+    "name" : "Weg Einschätzen",
+    "description" : "Du kannst einschätzen, wie gut ein Weg begehbar ist und welcher von mehreren\nmöglichen Wegen der schnellere oder sicherere sein könnte.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 3
+      }, {
+        "id" : "world",
+        "name" : "Weltkunde",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "assess_environment",
+        "name" : "Umgebung Einschätzen"
+      } ]
+    }
+  }, {
     "id" : "rifle_shooting",
     "name" : "Gewehrschießen",
     "cost" : 4,
@@ -1212,6 +1608,29 @@
         "level" : 9
       } ],
       "skills" : [ ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "guide_animal",
+    "name" : "Tier Führen",
+    "description" : "Du kannst ein Tier dazu bringen, einfache Tätigkeiten durchzuführen, während du es führst.\nDazu gehört das Tragen von Lasten und Reitern.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 9
+      }, {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 7
+      } ],
+      "skills" : [ {
+        "id" : "animals",
+        "name" : "Tierkunde",
+        "level" : 3
+      } ],
       "talents" : [ ]
     }
   }, {
