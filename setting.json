@@ -324,7 +324,7 @@
   }, {
     "id" : "thieves_language",
     "name" : "Gaunersprache",
-    "description" : "Du beherschst die Gaunersprache.",
+    "description" : "Du beherrschst die Grundlagen der Gaunersprache.\nDiese fasst Codewörter, Geheimzeichen und Redewendungen krimineller Organisationen zusammen, welche sich untereinander stark unterscheiden.\nDie verschiedenen Ausprägungen zu lernen benötigt Zeit und einen entsprechenden Kontakt.\nDu bist jedoch grundsätzlich geübt darin, diese zu lernen und kannst erkennen, wenn jemand eine Gaunersprache verwendet.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -432,8 +432,8 @@
     }
   }, {
     "id" : "sign_language",
-    "name" : "Zeichensprache",
-    "description" : "Du beherschst die Zeichensprache.",
+    "name" : "Gebärdensprache",
+    "description" : "Du beherschst eine weit verbreitete Form der Gebärdensprache.\nDiese wird vor allem von Gehörlosen verwendet, um untereinander und mit anderen zu kommunizieren.\nDarüber hinaus haben aber auch einige Jäger, Soldaten, Diebe und andere Professionen\ndie Vorteile eines geräuschlosen Kommunikationsweges für sich entdeckt.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -452,7 +452,7 @@
   }, {
     "id" : "old_language",
     "name" : "Alte Sprache",
-    "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen.",
+    "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen.\nDie Alte Sprache bezeichnet tatsächlich eine Mischung aus den verbeitesten Sprachen der Alten Welt.\nIm weitesten Sinne gehören dazu auch Symbole, Maßeinheiten und die Normen technischer Baupläne,\ndie für das Verständnis der Vorzeit von Bedeutung sind.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1695,7 +1695,7 @@
   }, {
     "id" : "trade_language",
     "name" : "Handelssprache",
-    "description" : "Du beherschst die Handelssprache.",
+    "description" : "Du beherschst die Handelssprache der Allianz.\nDie Handelssprache ist keine vollständige Sprache, sondern eine eingeschränkte Sammlung von Begriffen und Floskeln\nwelche für Händler und Reisende wichtig sind.\nDas Vokabular erlaubt Gruß und Abschied, Bitten um Unterkunft, Verpflegung und Richtungsangaben,\nsowieso Worte für geläufige Handelswaren und Dienstleistungen, Mengen- und Gewichtseinheiten sowie das Aushandeln von Preisen.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1993,19 +1993,19 @@
   }, {
     "id" : "old_language",
     "name" : "Alte Sprache",
-    "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen."
+    "description" : "Du kannst Fragmente der Alten Sprache lesen, schreiben, sprechen und verstehen.\nDie Alte Sprache bezeichnet tatsächlich eine Mischung aus den verbeitesten Sprachen der Alten Welt.\nIm weitesten Sinne gehören dazu auch Symbole, Maßeinheiten und die Normen technischer Baupläne,\ndie für das Verständnis der Vorzeit von Bedeutung sind."
   }, {
     "id" : "sign_language",
-    "name" : "Zeichensprache",
-    "description" : "Du beherschst die Zeichensprache."
+    "name" : "Gebärdensprache",
+    "description" : "Du beherschst eine weit verbreitete Form der Gebärdensprache.\nDiese wird vor allem von Gehörlosen verwendet, um untereinander und mit anderen zu kommunizieren.\nDarüber hinaus haben aber auch einige Jäger, Soldaten, Diebe und andere Professionen\ndie Vorteile eines geräuschlosen Kommunikationsweges für sich entdeckt."
   }, {
     "id" : "trade_language",
     "name" : "Handelssprache",
-    "description" : "Du beherschst die Handelssprache."
+    "description" : "Du beherschst die Handelssprache der Allianz.\nDie Handelssprache ist keine vollständige Sprache, sondern eine eingeschränkte Sammlung von Begriffen und Floskeln\nwelche für Händler und Reisende wichtig sind.\nDas Vokabular erlaubt Gruß und Abschied, Bitten um Unterkunft, Verpflegung und Richtungsangaben,\nsowieso Worte für geläufige Handelswaren und Dienstleistungen, Mengen- und Gewichtseinheiten sowie das Aushandeln von Preisen."
   }, {
     "id" : "thieves_language",
     "name" : "Gaunersprache",
-    "description" : "Du beherschst die Gaunersprache."
+    "description" : "Du beherrschst die Grundlagen der Gaunersprache.\nDiese fasst Codewörter, Geheimzeichen und Redewendungen krimineller Organisationen zusammen, welche sich untereinander stark unterscheiden.\nDie verschiedenen Ausprägungen zu lernen benötigt Zeit und einen entsprechenden Kontakt.\nDu bist jedoch grundsätzlich geübt darin, diese zu lernen und kannst erkennen, wenn jemand eine Gaunersprache verwendet."
   } ],
   "weaponTypes" : [ {
     "id" : "impact",
