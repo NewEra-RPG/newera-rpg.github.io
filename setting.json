@@ -303,6 +303,25 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "balance",
+    "name" : "Balancieren",
+    "description" : "Du kannst auf schmalen Wegen die Balance halten.",
+    "cost" : 2,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "acrobatics",
+        "name" : "Akrobatik",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "thieves_language",
     "name" : "Gaunersprache",
     "description" : "Du beherschst die Gaunersprache.",
@@ -321,25 +340,6 @@
       }, {
         "id" : "deception",
         "name" : "Täuschung",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "balance",
-    "name" : "Balancieren",
-    "description" : "Du kannst auf schmalen Wegen die Balance halten.",
-    "cost" : 2,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "agility",
-        "name" : "Gewandtheit",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "acrobatics",
-        "name" : "Akrobatik",
         "level" : 2
       } ],
       "talents" : [ ]
@@ -368,24 +368,6 @@
         "id" : "language",
         "name" : "Sprache",
         "level" : 1
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "knife_fighting",
-    "name" : "Messerkampf",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "precision",
-        "name" : "Präzision",
-        "level" : 8
-      } ],
-      "skills" : [ {
-        "id" : "blade_weapon",
-        "name" : "Klingenwaffen",
-        "level" : 2
       } ],
       "talents" : [ ]
     }
@@ -429,6 +411,24 @@
         "id" : "customs",
         "name" : "Brauchtum"
       } ]
+    }
+  }, {
+    "id" : "knife_fighting",
+    "name" : "Messerkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "precision",
+        "name" : "Präzision",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
     }
   }, {
     "id" : "sign_language",
@@ -551,21 +551,6 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "keen_hearing",
-    "name" : "Scharfes Gehör",
-    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
-    "cost" : 4,
-    "innate" : true,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnehmung",
-        "level" : 9
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "staff_fighting",
     "name" : "Stabkampf",
     "cost" : 3,
@@ -581,6 +566,21 @@
         "name" : "Stangenwaffen",
         "level" : 2
       } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_hearing",
+    "name" : "Scharfes Gehör",
+    "description" : "Du hast gute Ohren, wodurch du auch leise Geräusche bemerkst und Gespräche\nbelauschen kannst.",
+    "cost" : 4,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
       "talents" : [ ]
     }
   }, {
@@ -973,21 +973,6 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "keen_scent",
-    "name" : "Feiner Geruch",
-    "description" : "Du hast eine feine Nase, mit der du Gerüche aufspüren und unterscheiden kannst.",
-    "cost" : 3,
-    "innate" : true,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnehmung",
-        "level" : 9
-      } ],
-      "skills" : [ ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "riding",
     "name" : "Reiten",
     "description" : "Ein Charakter, der im Reiten geübt ist, kann sich auf Reittieren – üblicherweise\nPferden – im Sattel halten und auf deren Rücken längere Reisen bestreiten, in\nhalsbrecherischem Galopp vorwärts preschen und dabei auch unter widrigen\nBedingungen die Kontrolle behalten. Er kann seine erhöhte Position effektiv im\nKampf nutzen und gewagte Manöver vollführen um Schaden von sich und seinem\nReittier abzuhalten.",
@@ -1008,6 +993,21 @@
         "id" : "guide_animal",
         "name" : "Tier Führen"
       } ]
+    }
+  }, {
+    "id" : "keen_scent",
+    "name" : "Feiner Geruch",
+    "description" : "Du hast eine feine Nase, mit der du Gerüche aufspüren und unterscheiden kannst.",
+    "cost" : 3,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
+      "talents" : [ ]
     }
   }, {
     "id" : "find_path",
@@ -1233,6 +1233,24 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "sword_fighting_2h",
+    "name" : "Schwertkampf (zweihändig)",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "blade_weapon",
+        "name" : "Klingenwaffen",
+        "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "first_aid",
     "name" : "Erste Hilfe",
     "description" : "Erste Hilfe erlaubt es, einen verletzten Charakter zu stabilisieren,\nleichte Wunden zu behandeln und das Aufreißen größerer Wunden zu verhindern.",
@@ -1252,24 +1270,6 @@
         "id" : "healing",
         "name" : "Heilkunde",
         "level" : 1
-      } ],
-      "talents" : [ ]
-    }
-  }, {
-    "id" : "sword_fighting_2h",
-    "name" : "Schwertkampf (zweihändig)",
-    "cost" : 5,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 11
-      } ],
-      "skills" : [ {
-        "id" : "blade_weapon",
-        "name" : "Klingenwaffen",
-        "level" : 3
       } ],
       "talents" : [ ]
     }
@@ -1452,6 +1452,24 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "hammer_fighting",
+    "name" : "Hammerkampf",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "athletics",
+        "name" : "Athletik",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "impact_weapon",
+        "name" : "Wuchtwaffen",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "assess_waters",
     "name" : "Gewässer Einschätzen",
     "description" : "Du kannst einschätzen, wie sicher es ist, ein Gewässer zu überqueren, darin zu schwimmen oder es zu befahren.",
@@ -1476,24 +1494,6 @@
         "id" : "assess_environment",
         "name" : "Umgebung Einschätzen"
       } ]
-    }
-  }, {
-    "id" : "hammer_fighting",
-    "name" : "Hammerkampf",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "impact_weapon",
-        "name" : "Wuchtwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
     }
   }, {
     "id" : "shotgun_shooting",
@@ -1596,18 +1596,21 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "keen_sight",
-    "name" : "Scharfer Blick",
-    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
-    "cost" : 5,
-    "innate" : true,
+    "id" : "gleve_fighting",
+    "name" : "Glevenkampf",
+    "cost" : 3,
+    "innate" : false,
     "requirements" : {
       "attributes" : [ {
-        "id" : "perception",
-        "name" : "Wahrnehmung",
+        "id" : "athletics",
+        "name" : "Athletik",
         "level" : 9
       } ],
-      "skills" : [ ],
+      "skills" : [ {
+        "id" : "pole_weapon",
+        "name" : "Stangenwaffen",
+        "level" : 2
+      } ],
       "talents" : [ ]
     }
   }, {
@@ -1634,24 +1637,6 @@
       "talents" : [ ]
     }
   }, {
-    "id" : "gleve_fighting",
-    "name" : "Glevenkampf",
-    "cost" : 3,
-    "innate" : false,
-    "requirements" : {
-      "attributes" : [ {
-        "id" : "athletics",
-        "name" : "Athletik",
-        "level" : 9
-      } ],
-      "skills" : [ {
-        "id" : "pole_weapon",
-        "name" : "Stangenwaffen",
-        "level" : 2
-      } ],
-      "talents" : [ ]
-    }
-  }, {
     "id" : "chain_fighting",
     "name" : "Kettenkampf",
     "cost" : 3,
@@ -1667,6 +1652,21 @@
         "name" : "Wuchtwaffen",
         "level" : 2
       } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "keen_sight",
+    "name" : "Scharfer Blick",
+    "description" : "Du hast gute Augen, wodurch du auch kleine und weit entfernte Dinge scharf sehen\nkannst.",
+    "cost" : 5,
+    "innate" : true,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ ],
       "talents" : [ ]
     }
   }, {
@@ -1762,6 +1762,7 @@
   }, {
     "id" : "thean_language",
     "name" : "Theanisch",
+    "description" : "Theanisch ist die Sprache der Großstadt Thea.\nDarüber hinaus hat sie sich im Süden Funjenkas und in den älteren Eisenkolonien durchgesetzt.\nIn einigen Küstenstädten Middlands gibt es Theanisch sprechende Minderheiten.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1780,6 +1781,7 @@
   }, {
     "id" : "meerfestian_language",
     "name" : "Meerfestisch",
+    "description" : "Meerfestisch ist die Sprache der nördlichen Großstadt Meerfest.\nDie Sprache hat sich im Norden Fujenkas und den jüngeren Eisenkolonien durchgesetzt.\nMeerfestisch ist außerdem eine beliebte Zweitsprache unter Fernhändlern und Seefahrern des Nordmeeres.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1798,6 +1800,7 @@
   }, {
     "id" : "seeguardian_language",
     "name" : "Seegardisch",
+    "description" : "Seegardisch ist die Sprache des Alten Allianz-Gebietes um Seegard und Stalisz.\nDurch die Feldzüge der Allianz hat sich die Sprache und deren Einflüsse weit verbeitet und man findet zahlreiche\nSprecher der ursprünglichen Form in Feuerland, Middland und entlang der Großen Weststraße.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1816,6 +1819,7 @@
   }, {
     "id" : "firelandish_language",
     "name" : "Feuerländisch",
+    "description" : "Feuerländisch wird in Feuerland gesprochen.\nNeben Middländisch ist es die zweithäufigste Sprache der Hauptstadt.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1834,6 +1838,7 @@
   }, {
     "id" : "westish_language",
     "name" : "Westländisch",
+    "description" : "Westländisch wird entlang der Großen Weststraße gesprochen.\nDurch die Bedeutung der Handelsrouten finden sich Sprecher von Stalisz bis Nyrra und Westlädnsich ist \ndie beliebteste Zweitssprache unter Fernhändlern, die in diesen Gebieten tätig sind.\nDie Sprache ist auch einigen Stämmen Skellans bekannt, insbesondere im Grenzgebiet.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1852,6 +1857,7 @@
   }, {
     "id" : "nyrran_language",
     "name" : "Nyrrisch",
+    "description" : "Nyrrisch wurde ursprünglich in Nyrra und dessen allierten Städten und Ablegern wie Arriz, Akalao und Karion gesprochen.\nDurch zahlreiche Eroberungen hat es sich bei nach Ters und entlang der Südküste ausgebreitet und wird auch entlang der\nGroßen Weststraße und in Skellan gesprochen.\nSeit Nyrra der Allianz angehört, verwenden ehemalige Vasallen aber aus Protest ihre ursprünglichen lokalen Sprachen oder Altavianisch.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1870,6 +1876,7 @@
   }, {
     "id" : "skellan_language",
     "name" : "Skellanisch",
+    "description" : "Skellanisch wird von den Stämmen Skellans gesprochen.\nDie Sprache wird je nach Stamm unterschiedlich aus Einflüssen lokal verbeiteter Sprachen,\nder Alten Sprache, sowie Westländisch und Nyrrisch beeinflusst.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1888,6 +1895,7 @@
   }, {
     "id" : "nettlish_language",
     "name" : "Nisslisch",
+    "description" : "Nisslisch wurde ursprünglich in Nisselburg gesprochen.\nMittlerweile ist es auch die verbeiteste Sprache in der Partnerstadt Seefeld und in den ländlichen Gebieten Nisselfelds.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1906,6 +1914,7 @@
   }, {
     "id" : "altavian_language",
     "name" : "Altavianisch",
+    "description" : "Altavianisch ist die Sprache der Stadt Altavoz und der dazugehörigen Insel.\nObwohl Altavoz selbst klein ist, hat sich die Sprache besonders unter Gelehrten und Technikern zum Informationsaustausch verbreitet.\nAuch einige ehemalige nyrrische Vasallen verwenden Altavianisch als Alternative gegenüber der Sprache der ehemlaigen Eroberer.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1924,6 +1933,7 @@
   }, {
     "id" : "midlandish_language",
     "name" : "Middländisch",
+    "description" : "Middländisch ist die Sprache Middlands und die verbeiteste Sprache der Hauptstadt.\nIn vielen Gebieten hat es Seegardisch als die offizielle Sprache der Allianz-Bürokratie abgelöst.",
     "cost" : 3,
     "innate" : false,
     "requirements" : {
@@ -1942,34 +1952,44 @@
   } ],
   "languages" : [ {
     "id" : "thean",
-    "name" : "Theanisch"
+    "name" : "Theanisch",
+    "description" : "Theanisch ist die Sprache der Großstadt Thea.\nDarüber hinaus hat sie sich im Süden Funjenkas und in den älteren Eisenkolonien durchgesetzt.\nIn einigen Küstenstädten Middlands gibt es Theanisch sprechende Minderheiten."
   }, {
     "id" : "meerfestian",
-    "name" : "Meerfestisch"
+    "name" : "Meerfestisch",
+    "description" : "Meerfestisch ist die Sprache der nördlichen Großstadt Meerfest.\nDie Sprache hat sich im Norden Fujenkas und den jüngeren Eisenkolonien durchgesetzt.\nMeerfestisch ist außerdem eine beliebte Zweitsprache unter Fernhändlern und Seefahrern des Nordmeeres."
   }, {
     "id" : "seeguardian",
-    "name" : "Seegardisch"
+    "name" : "Seegardisch",
+    "description" : "Seegardisch ist die Sprache des Alten Allianz-Gebietes um Seegard und Stalisz.\nDurch die Feldzüge der Allianz hat sich die Sprache und deren Einflüsse weit verbeitet und man findet zahlreiche\nSprecher der ursprünglichen Form in Feuerland, Middland und entlang der Großen Weststraße."
   }, {
     "id" : "firelandish",
-    "name" : "Feuerländisch"
+    "name" : "Feuerländisch",
+    "description" : "Feuerländisch wird in Feuerland gesprochen.\nNeben Middländisch ist es die zweithäufigste Sprache der Hauptstadt."
   }, {
     "id" : "westish",
-    "name" : "Westländisch"
+    "name" : "Westländisch",
+    "description" : "Westländisch wird entlang der Großen Weststraße gesprochen.\nDurch die Bedeutung der Handelsrouten finden sich Sprecher von Stalisz bis Nyrra und Westlädnsich ist \ndie beliebteste Zweitssprache unter Fernhändlern, die in diesen Gebieten tätig sind.\nDie Sprache ist auch einigen Stämmen Skellans bekannt, insbesondere im Grenzgebiet."
   }, {
     "id" : "nyrran",
-    "name" : "Nyrrisch"
+    "name" : "Nyrrisch",
+    "description" : "Nyrrisch wurde ursprünglich in Nyrra und dessen allierten Städten und Ablegern wie Arriz, Akalao und Karion gesprochen.\nDurch zahlreiche Eroberungen hat es sich bei nach Ters und entlang der Südküste ausgebreitet und wird auch entlang der\nGroßen Weststraße und in Skellan gesprochen.\nSeit Nyrra der Allianz angehört, verwenden ehemalige Vasallen aber aus Protest ihre ursprünglichen lokalen Sprachen oder Altavianisch."
   }, {
     "id" : "skellan",
-    "name" : "Skellanisch"
+    "name" : "Skellanisch",
+    "description" : "Skellanisch wird von den Stämmen Skellans gesprochen.\nDie Sprache wird je nach Stamm unterschiedlich aus Einflüssen lokal verbeiteter Sprachen,\nder Alten Sprache, sowie Westländisch und Nyrrisch beeinflusst."
   }, {
     "id" : "nettlish",
-    "name" : "Nisslisch"
+    "name" : "Nisslisch",
+    "description" : "Nisslisch wurde ursprünglich in Nisselburg gesprochen.\nMittlerweile ist es auch die verbeiteste Sprache in der Partnerstadt Seefeld und in den ländlichen Gebieten Nisselfelds."
   }, {
     "id" : "altavian",
-    "name" : "Altavianisch"
+    "name" : "Altavianisch",
+    "description" : "Altavianisch ist die Sprache der Stadt Altavoz und der dazugehörigen Insel.\nObwohl Altavoz selbst klein ist, hat sich die Sprache besonders unter Gelehrten und Technikern zum Informationsaustausch verbreitet.\nAuch einige ehemalige nyrrische Vasallen verwenden Altavianisch als Alternative gegenüber der Sprache der ehemlaigen Eroberer."
   }, {
     "id" : "midlandish",
-    "name" : "Middländisch"
+    "name" : "Middländisch",
+    "description" : "Middländisch ist die Sprache Middlands und die verbeiteste Sprache der Hauptstadt.\nIn vielen Gebieten hat es Seegardisch als die offizielle Sprache der Allianz-Bürokratie abgelöst."
   }, {
     "id" : "old_language",
     "name" : "Alte Sprache",
@@ -2072,7 +2092,8 @@
       "description" : ""
     }, {
       "id" : "spear",
-      "name" : "Speer"
+      "name" : "Speer",
+      "description" : ""
     }, {
       "id" : "pike",
       "name" : "Spieß",
@@ -2113,6 +2134,7 @@
       "weapons" : [ {
         "id" : "spear",
         "name" : "Speer",
+        "description" : "",
         "cost" : 25,
         "availability" : "VILLAGE",
         "weight" : 1,
@@ -2219,33 +2241,6 @@
           }
         }
       }, {
-        "id" : "long_bow",
-        "name" : "Langbogen",
-        "cost" : 120,
-        "availability" : "TOWN",
-        "weight" : 1,
-        "type" : {
-          "id" : "range",
-          "name" : "Fernwaffe"
-        },
-        "subtype" : {
-          "id" : "bow",
-          "name" : "Bogen"
-        },
-        "reach" : 0.0,
-        "range" : 25,
-        "damage" : {
-          "dice" : {
-            "amount" : 1,
-            "value" : 12
-          },
-          "bonus" : {
-            "base" : 10,
-            "step" : 2,
-            "increment" : 1
-          }
-        }
-      }, {
         "id" : "two_handed_axe",
         "name" : "Zweihandaxt",
         "cost" : 50,
@@ -2270,6 +2265,33 @@
             "base" : 12,
             "step" : 3,
             "increment" : 2
+          }
+        }
+      }, {
+        "id" : "long_bow",
+        "name" : "Langbogen",
+        "cost" : 120,
+        "availability" : "TOWN",
+        "weight" : 1,
+        "type" : {
+          "id" : "range",
+          "name" : "Fernwaffe"
+        },
+        "subtype" : {
+          "id" : "bow",
+          "name" : "Bogen"
+        },
+        "reach" : 0.0,
+        "range" : 25,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 12
+          },
+          "bonus" : {
+            "base" : 10,
+            "step" : 2,
+            "increment" : 1
           }
         }
       }, {
@@ -2300,33 +2322,6 @@
           }
         }
       }, {
-        "id" : "walking_staff",
-        "name" : "Wanderstab",
-        "cost" : 10,
-        "availability" : "HINTERLAND",
-        "weight" : 1,
-        "type" : {
-          "id" : "pole",
-          "name" : "Stangenwaffe"
-        },
-        "subtype" : {
-          "id" : "staff",
-          "name" : "Stab"
-        },
-        "reach" : 2.0,
-        "range" : 0,
-        "damage" : {
-          "dice" : {
-            "amount" : 1,
-            "value" : 4
-          },
-          "bonus" : {
-            "base" : 8,
-            "step" : 1,
-            "increment" : 1
-          }
-        }
-      }, {
         "id" : "walking_stick",
         "name" : "Wanderstock",
         "cost" : 10,
@@ -2350,6 +2345,33 @@
           "bonus" : {
             "base" : 7,
             "step" : 3,
+            "increment" : 1
+          }
+        }
+      }, {
+        "id" : "walking_staff",
+        "name" : "Wanderstab",
+        "cost" : 10,
+        "availability" : "HINTERLAND",
+        "weight" : 1,
+        "type" : {
+          "id" : "pole",
+          "name" : "Stangenwaffe"
+        },
+        "subtype" : {
+          "id" : "staff",
+          "name" : "Stab"
+        },
+        "reach" : 2.0,
+        "range" : 0,
+        "damage" : {
+          "dice" : {
+            "amount" : 1,
+            "value" : 4
+          },
+          "bonus" : {
+            "base" : 8,
+            "step" : 1,
             "increment" : 1
           }
         }
