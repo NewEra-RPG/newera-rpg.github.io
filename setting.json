@@ -243,6 +243,25 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "track_animal",
+    "name" : "Tier Verfolgen",
+    "description" : "Du bist geübt darin, alle Arten von Tierspuren zu verfolgen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "animals",
+        "name" : "Tierkunde",
+        "level" : 3
+      } ],
+      "talents" : [ null ]
+    }
+  }, {
     "id" : "short_range_shot",
     "name" : "Kurzschuss",
     "description" : "Du erhältst einen Aktionswürfel, wenn du auf kurze Distanz schießt schießt.",
@@ -284,6 +303,29 @@
       } ]
     }
   }, {
+    "id" : "tracking",
+    "name" : "Fährtenlesen",
+    "description" : "Du kannst die Fährte von Menschen und Tieren verfolgen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "alertness",
+        "name" : "Aufmerksamkeit",
+        "level" : 3
+      }, {
+        "id" : "nature",
+        "name" : "Naturkunde",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "entice_animal",
     "name" : "Tier Anlocken",
     "description" : "Du kannst Tiere dazu ermutigen, sich dir zu nähern.",
@@ -301,6 +343,32 @@
         "level" : 2
       } ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "hiding",
+    "name" : "Verstecken",
+    "description" : "Du bist geübt darin, geeignete Verstecke zu finden und diese zu nutzen, um Entdeckung zu entgehen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 9
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "concealment",
+        "name" : "Verbergen"
+      } ]
     }
   }, {
     "id" : "balance",
@@ -343,6 +411,32 @@
         "level" : 2
       } ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "crowd_cover",
+    "name" : "Untertauchen",
+    "description" : "Du verstehst dich darauf, Menschenmengen als Deckung zu nutzen, um dich zu verbergen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "charisma",
+        "name" : "Ausstrahlung",
+        "level" : 12
+      } ],
+      "skills" : [ {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 3
+      }, {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 2
+      } ],
+      "talents" : [ {
+        "id" : "concealment",
+        "name" : "Verbergen"
+      } ]
     }
   }, {
     "id" : "spread_rumors",
@@ -551,6 +645,33 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "ambush",
+    "name" : "Auflauern",
+    "description" : "Du bist geschickt darin, einen Hinterhalt vorzubereiten und dich solange verborgen zu halten,\nbis sich eine günstige Gelegenheit für einen Angriff ergibt.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 8
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 3
+      }, {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "staff_fighting",
     "name" : "Stabkampf",
     "cost" : 3,
@@ -647,6 +768,29 @@
         "id" : "blade_weapon",
         "name" : "Klingenwaffen",
         "level" : 3
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "concealment",
+    "name" : "Verbergen",
+    "description" : "Du kannst dafür sorgen, dass deine Anwesenheit unbemerkt bleibt.",
+    "cost" : 3,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 8
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 2
       } ],
       "talents" : [ ]
     }
@@ -973,6 +1117,36 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "stalking",
+    "name" : "Verfolgen",
+    "description" : "Du bist geschickt darin, ein Ziel unbemerkt zu verfolgen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 11
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 4
+      }, {
+        "id" : "alertness",
+        "name" : "Aufmerksamkeit",
+        "level" : 2
+      } ],
+      "talents" : [ {
+        "id" : "concealment",
+        "name" : "Verbergen"
+      } ]
+    }
+  }, {
     "id" : "riding",
     "name" : "Reiten",
     "description" : "Ein Charakter, der im Reiten geübt ist, kann sich auf Reittieren – üblicherweise\nPferden – im Sattel halten und auf deren Rücken längere Reisen bestreiten, in\nhalsbrecherischem Galopp vorwärts preschen und dabei auch unter widrigen\nBedingungen die Kontrolle behalten. Er kann seine erhöhte Position effektiv im\nKampf nutzen und gewagte Manöver vollführen um Schaden von sich und seinem\nReittier abzuhalten.",
@@ -1072,6 +1246,62 @@
         "level" : 2
       } ],
       "talents" : [ ]
+    }
+  }, {
+    "id" : "maneuver",
+    "name" : "Manövrieren",
+    "description" : "Du kannst Anweisungen geben, um dich und deine Verbündeten in eine\ngünstige Position für einen Kampf zu bringen.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "dexterity",
+        "name" : "Geschick",
+        "level" : 8
+      }, {
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 8
+      } ],
+      "skills" : [ {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 2
+      } ],
+      "talents" : [ ]
+    }
+  }, {
+    "id" : "pincer_movement",
+    "name" : "Zangenangriff",
+    "description" : "Du kannst Anweisungen geben, um einen Gegner von zwei gegenüberliegenden Seite anzugreifen.",
+    "cost" : 8,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 12
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 12
+      } ],
+      "skills" : [ {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 4
+      }, {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 2
+      } ],
+      "talents" : [ {
+        "id" : "flanking_maneuver",
+        "name" : "Flankenangriff"
+      }, {
+        "id" : "assess_environment",
+        "name" : "Umgebung Einschätzen"
+      } ]
     }
   }, {
     "id" : "knife_throwing",
@@ -1335,6 +1565,32 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "scouting",
+    "name" : "Ausspähen",
+    "description" : "Du bist geschickt darin, dich unbemerkt in der Nähe eines Zieles aufzuhalten und\nInformationen darüber zu sammeln.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "agility",
+        "name" : "Gewandtheit",
+        "level" : 11
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 11
+      } ],
+      "skills" : [ {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 3
+      } ],
+      "talents" : [ {
+        "id" : "stalking",
+        "name" : "Verfolgen"
+      } ]
+    }
+  }, {
     "id" : "hard_punches",
     "name" : "Harte Schläge",
     "description" : "Der Schaden deiner unbewaffneten Angriffe erhöht sich um 1 je 8 Stärke.",
@@ -1581,6 +1837,36 @@
       "talents" : [ ]
     }
   }, {
+    "id" : "flanking_maneuver",
+    "name" : "Flankenangriff",
+    "description" : "Du kannst Anweisungen geben, um einen Gegner von einer zweiten Seite anzugreifen.",
+    "cost" : 5,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "willpower",
+        "name" : "Wille",
+        "level" : 10
+      }, {
+        "id" : "perception",
+        "name" : "Wahrnehmung",
+        "level" : 10
+      } ],
+      "skills" : [ {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 3
+      }, {
+        "id" : "stealth",
+        "name" : "Heimlichkeit",
+        "level" : 1
+      } ],
+      "talents" : [ {
+        "id" : "maneuver",
+        "name" : "Manövrieren"
+      } ]
+    }
+  }, {
     "id" : "keen_taste",
     "name" : "Feiner Geschmack",
     "description" : "Du hast eine feine Zunge, die unterschiedlichste Geschmäcker unterscheiden kann.",
@@ -1738,6 +2024,29 @@
       } ]
     }
   }, {
+    "id" : "intimidation",
+    "name" : "Einschüchtern",
+    "description" : "Du kannst andere durch dein Erscheinungsbild und deine Körpersprache überzeugen,\ndass sie sich nicht mit dir anlegen sollten.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "endurance",
+        "name" : "Ausdauer",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "society",
+        "name" : "Gesellschaft",
+        "level" : 1
+      }, {
+        "id" : "deception",
+        "name" : "Täuschung",
+        "level" : 1
+      } ],
+      "talents" : [ ]
+    }
+  }, {
     "id" : "charging_impact",
     "name" : "Sturmbrecher",
     "description" : "Du erhältst einen Aktionswürfel für den Angriffswurf bei einem Sturmangriff,\nwenn du mit einer Wuchtwaffe angreifst.",
@@ -1758,6 +2067,29 @@
         "id" : "charging_strike",
         "name" : "Sturmhieb"
       } ]
+    }
+  }, {
+    "id" : "scour",
+    "name" : "Durchkämmen",
+    "description" : "Du weißt, wie du vorgehen musst, um innerhalb eines abgeschlossenen Raumes oder\neines überschaubaren Bereiches etwas bestimmtes zu finden.",
+    "cost" : 4,
+    "innate" : false,
+    "requirements" : {
+      "attributes" : [ {
+        "id" : "insight",
+        "name" : "Erkenntnis",
+        "level" : 9
+      } ],
+      "skills" : [ {
+        "id" : "alertness",
+        "name" : "Aufmerksamkeit",
+        "level" : 3
+      }, {
+        "id" : "tactics",
+        "name" : "Taktik",
+        "level" : 2
+      } ],
+      "talents" : [ ]
     }
   }, {
     "id" : "thean_language",
