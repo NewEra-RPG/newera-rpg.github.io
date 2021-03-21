@@ -259,7 +259,10 @@
         "name" : "Tierkunde",
         "level" : 3
       } ],
-      "talents" : [ null ]
+      "talents" : [ {
+        "id" : "tracking",
+        "name" : "Fährtenlesen"
+      } ]
     }
   }, {
     "id" : "short_range_shot",
