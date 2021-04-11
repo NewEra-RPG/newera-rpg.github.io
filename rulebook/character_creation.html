@@ -1,40 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> 
-  <meta charset="utf-8">
-  <title>Charaktererstellung</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-<header>
-	<span class="logo">NewEra RPG Regelwerk</span>
-</header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="introduction.html">Einführung</a>
-  <a href="character_creation.html" class="current">Charaktererstellung</a>
-  <a href="fate.html">Bestimmung</a>
-  <a href="attributes.html">Attribute</a>
-  <a href="skills.html">Fertigkeiten</a>
-  <a href="talents.html">Talente</a>
-  <a href="equipment.html">Ausrüstung</a>
-  <a href="challenges.html">Herausforderungen</a>
-  <a href="battle.html">Kampf</a>
-  <a href="world.html">Welt</a>
-</nav>
-<main>
-<h1>Charaktererstellung</h1>
-<p>Um spielen zu können, benötigt jeder Spieler einen Charakter. Ein Charakter
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><title>NewEra - Charaktererstellung</title><link rel="stylesheet" href="./styles/rulebook.css"></head><body><nav><a href="introduction.html">Einführung</a><a href="character_creation.html">Charaktererstellung</a><a href="fate.html">Bestimmung</a><a href="attributes.html">Attribute</a><a href="skills.html">Fertigkeiten</a><a href="talents.html">Talente</a><a href="equipment.html">Ausrüstung</a><a href="challenges.html">Herausforderungen</a><a href="battle.html">Kampf</a><a href="world.html">Welt</a></nav><header><div>hier kommt noch ein Header</div></header><main><h1>Charaktererstellung</h1><p>Um spielen zu können, benötigt jeder Spieler einen Charakter. Ein Charakter
 besteht aus einer Persönlichkeit, aus Attributen, Fertigkeiten und Talenten, die
 bestimmen, wie er Einfluss auf die Welt nehmen kann, sowie Vermögen und
 Ausrüstung, die ihn dabei unterstützen.</p>
 <p>Jeder Spieler-Charakter (SC) und sonstige wichtige Charaktere sollten
 auf einem NewEra-Charakterbogen eingetragen werden, um den Überblick zu
 behalten.</p>
-<h2>Hintergrund</h2>
+<h2 id="character-background">Hintergrund</h2>
 <p>Jeder Charakter sollte mit einem grundlegenden Hintergrund beginnen, auch wenn
 dieser erst im Lauf des Spiels weiter ausgestaltet wird. Dazu gehören
 grundsätzliche Dinge wie sein Name und Alter, seine Herkunft und welchen Beruf
@@ -62,13 +33,13 @@ jetzigen Zeit &quot;natürlich&quot; vorkommen und sogar Merkmal bestimmter Blut
 sein.</p>
 <p>Man sollte jedoch davon ausgehen, dass ein Charakter, der sich äußerlich stark
 von seinem Umfeld unterscheidet, entsprechende Aufmerksamkeit erhält.</p>
-<h2>Bestimmung</h2>
+<h2 id="character-fate">Bestimmung</h2>
 <p>Eine Bestimmung ist ein Leitfaden dafür, wie ein Charakter sich
 verhalten und welche Ziele er erreichen soll.</p>
 <p>Es können 2 Ideale ausgesucht oder eine alternative Bestimmung festgelegt
 werden.</p>
-<h2>Attribute</h2>
-<h3>Primäre Attribute</h3>
+<h2 id="character-attributes">Attribute</h2>
+<h3 id="charachter-attributes-primary">Primäre Attribute</h3>
 <p>Ein normaler Charakter startet mit 1 Attributpunkt.
 Ein Held startet mit 5 Attributpunkten.</p>
 <p>Stufen in Primären Attributen werden mit Attributpunkten (ATP) erkauft.
@@ -78,32 +49,120 @@ sofort ausgegeben oder angespart und bei einem späteren Stufenaufstieg verwende
 werden.</p>
 <table>
 <thead>
-<tr><th colspan="11"></th></tr>
+<tr>
+<th></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+</tr>
 </thead>
 <tbody>
-<tr><td>Stufe</td><td align="right">11</td><td align="right">12</td><td align="right">13</td><td align="right">14</td><td align="right">15</td><td align="right">16</td><td align="right">17</td><td align="right">18</td><td align="right">19</td><td align="right">20</td></tr>
-<tr><td></td><td align="right">9</td><td align="right">8</td><td align="right">7</td><td align="right">6</td><td align="right">5</td><td align="right">4</td><td align="right">3</td><td align="right">2</td><td align="right">1</td><td align="right">0</td></tr>
-<tr><td>ATP</td><td align="right">1</td><td align="right">2</td><td align="right">3</td><td align="right">4</td><td align="right">6</td><td align="right">8</td><td align="right">10</td><td align="right">13</td><td align="right">16</td><td align="right">20</td></tr>
-<tr><td>Σ</td><td align="right">1</td><td align="right">3</td><td align="right">6</td><td align="right">10</td><td align="right">16</td><td align="right">24</td><td align="right">34</td><td align="right">47</td><td align="right">63</td><td align="right">83</td></tr>
+<tr>
+<td>Stufe</td>
+<td style="text-align:right">11</td>
+<td style="text-align:right">12</td>
+<td style="text-align:right">13</td>
+<td style="text-align:right">14</td>
+<td style="text-align:right">15</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">17</td>
+<td style="text-align:right">18</td>
+<td style="text-align:right">19</td>
+<td style="text-align:right">20</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">0</td>
+</tr>
+<tr>
+<td>ATP</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">10</td>
+<td style="text-align:right">13</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">20</td>
+</tr>
+<tr>
+<td>Σ</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">10</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">24</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right">47</td>
+<td style="text-align:right">63</td>
+<td style="text-align:right">83</td>
+</tr>
 </tbody>
 </table>
-<h3>Sekundäre Attribute</h3>
+<h3 id="charachter-attributes-secondary">Sekundäre Attribute</h3>
 <p>Sekundäre Attribute ergeben sich aus dem Durchschnitt von je zwei primären Attributen:</p>
 <table>
 <thead>
-<tr><th colspan="2">Primäre Attribute</th><th>Sekundäres Attribut</th></tr>
+<tr>
+<th>Primäre Attribute</th>
+<th></th>
+<th>Sekundäres Attribut</th>
+</tr>
 </thead>
 <tbody>
-<tr><td>Stärke</td><td>Gewandtheit</td><td>Athletik</td></tr>
-<tr><td>Gewandtheit</td><td>Wille</td><td>Charisma</td></tr>
-<tr><td>Wille</td><td>Stärke</td><td>Zähigkeit</td></tr>
-<tr><td>Geschick</td><td>Gedächtnis</td><td>Handwerk</td></tr>
-<tr><td>Gedächtnis</td><td>Wahrnehmung</td><td>Erkenntnis</td></tr>
-<tr><td>Wahrnehmung</td><td>Geschick</td><td>Präzision</td></tr>
+<tr>
+<td>Stärke</td>
+<td>Gewandtheit</td>
+<td>Athletik</td>
+</tr>
+<tr>
+<td>Gewandtheit</td>
+<td>Wille</td>
+<td>Charisma</td>
+</tr>
+<tr>
+<td>Wille</td>
+<td>Stärke</td>
+<td>Zähigkeit</td>
+</tr>
+<tr>
+<td>Geschick</td>
+<td>Gedächtnis</td>
+<td>Handwerk</td>
+</tr>
+<tr>
+<td>Gedächtnis</td>
+<td>Wahrnehmung</td>
+<td>Erkenntnis</td>
+</tr>
+<tr>
+<td>Wahrnehmung</td>
+<td>Geschick</td>
+<td>Präzision</td>
+</tr>
 </tbody>
 </table>
 <p>Beim Ermitteln der sekundären Attribute darf ebenso oft auf- wie abgerundet werden.</p>
-<h2>Fertigkeiten</h2>
+<h2 id="character-skills">Fertigkeiten</h2>
 <p>Fertigkeiten sind ebenfalls abgestuft und Fertigkeitsstufen werden
 mit Fertigkeitspunkten (FP) erworben. Ein Charakter erhält auf jeder
 Charakter-Stufe Fertigkeitspunkte (FP) in Höhe seiner Erkenntnis-Stufe. Ein
@@ -112,12 +171,60 @@ seiner Erkenntnis-Stufe.</p>
 <p>Fertigkeiten werden in Stufen von 0 bis 7 eingeteilt:</p>
 <table>
 <thead>
-<tr><th colspan="11"></th></tr>
+<tr>
+<th></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+<th style="text-align:right"></th>
+</tr>
 </thead>
 <tbody>
-<tr><td>Stufe</td><td align="right">0</td><td align="right">1</td><td align="right">2</td><td align="right">3</td><td align="right">4</td><td align="right">5</td><td align="right">6</td><td align="right">7</td></tr>
-<tr><td>FP</td><td align="right">0</td><td align="right">1</td><td align="right">2</td><td align="right">3</td><td align="right">4</td><td align="right">6</td><td align="right">8</td><td align="right">10</td></tr>
-<tr><td>Σ</td><td align="right">0</td><td align="right">1</td><td align="right">3</td><td align="right">6</td><td align="right">10</td><td align="right">16</td><td align="right">24</td><td align="right">34</td></tr>
+<tr>
+<td>Stufe</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">7</td>
+<td style="text-align:right"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>FP</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">8</td>
+<td style="text-align:right">10</td>
+<td style="text-align:right"></td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>Σ</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">3</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">10</td>
+<td style="text-align:right">16</td>
+<td style="text-align:right">24</td>
+<td style="text-align:right">34</td>
+<td style="text-align:right"></td>
+<td style="text-align:right"></td>
+</tr>
 </tbody>
 </table>
 <p>Es können des Weiteren Fertigkeiten in Höhe seiner Gedächtnis-Stufe auf als
@@ -125,7 +232,7 @@ bekannte Fertigkeiten eingetragen werden.</p>
 <p>Eine bekannte Fertigkeit auf Stufe 0 gewährt selbst keinen Bonus.
 Da die Fertigkeit nicht als unbekannt behandelt wird, müssen jedoch keine
 2 Aktionswürfel verschmolzen werden.</p>
-<h2>Talente</h2>
+<h2 id="character-talents">Talente</h2>
 <p>Talente sind Spezialisierungen von Fertigkeiten in bestimmte
 Anwendungsbereiche.</p>
 <p>Talente werden ebenfalls durch Fertigkeitspunkte erworben, sind jedoch nicht in
@@ -139,7 +246,7 @@ Voraussetzungen erfüllt. Dies können Stufen in Attributen und Fertigkeiten
 sein aber auch andere Talente. Einige Talente sind auch angeboren, was
 bedeutet, dass sie beim Erstellen des Charakters erworben werden müssen und
 zu einem späteren Zeitpunkt nicht mehr verfügbar sind.</p>
-<h2>Vermögen</h2>
+<h2 id="character-wealth">Vermögen</h2>
 <p>Jeder Charakter beginnt das Spiel mit einem bestimmten Vermögen in Geld,
 das er entweder behalten oder sofort für Ausrüstung, Handelswaren und sonstige
 Dinge ausgeben kann.</p>
@@ -152,9 +259,4 @@ machen, jedem Charakter einen anderen Vermögenswert zuzuweisen oder diesen mit
 3d6 auswürfeln zu lassen. Für die Attributstufe sucht sich der Spieler ein
 Attribut seines Charakters aus, sinnvollerweise eines mit möglichst hoher Stufe.
 Der Attributsfaktor ist 12 für Handwerk und 10 für alle anderen Attribute.</p>
-</main>
-<footer>
-<span class="author">Joel Lacour</span>
-</footer>
-</body>
-</html>
+</main><footer><a href="/">Startseite</a><button class="navigation-toggle">Kapitel</button></footer><script src="./scripts/navigation.js"></script></body></html>
