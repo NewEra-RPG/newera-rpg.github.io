@@ -20,6 +20,15 @@ footer > * {
     font-size: 150%;
 }
 
+.anchor {
+    margin-inline-start: 1ch;
+    font-size: 0.75em;
+}
+
+.anchor:hover {
+    color: black;
+}
+
 .label::after {
     content: ": ";
 }
