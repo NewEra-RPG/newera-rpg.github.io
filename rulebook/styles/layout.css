@@ -1,0 +1,39 @@
+
+html {
+    height: 100%;
+}
+body {
+    --header-height: 6em;
+    --footer-height: 6em;
+
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: var(--header-height) auto var(--footer-height);
+    grid-row-gap: 1em;
+}
+
+main {
+    overflow-y: scroll;
+    padding-inline-start: 4em;
+}
+
+main > :is(div, p, ul, ol) {
+    max-width: 80ch;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+footer a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

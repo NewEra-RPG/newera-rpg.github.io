@@ -1,0 +1,29 @@
+body {
+    --menu-color: whitesmoke;
+    --menu-background-color: grey;
+    --menu-font-size: 175%;
+
+    font-family: 'Crimson Text', serif;
+    font-size: 125%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--menu-color);
+}
+
+header, footer {
+    background-color: var(--menu-background-color);
+}
+
+footer > * {
+    font-size: 150%;
+}
+
+.label::after {
+    content: ": ";
+}
+
+.requirement:not(:last-child)::after {
+    content: ", "
+}
