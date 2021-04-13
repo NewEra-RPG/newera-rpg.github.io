@@ -1,10 +1,12 @@
 body {
+    --primary-color: black;
     --menu-color: whitesmoke;
     --menu-background-color: grey;
     --menu-font-size: 175%;
 
     font-family: 'Crimson Text', serif;
     font-size: 125%;
+    color: var(--primary-color)
 }
 
 a {
@@ -20,13 +22,21 @@ footer > * {
     font-size: 150%;
 }
 
-.anchor {
-    margin-inline-start: 1ch;
-    font-size: 0.75em;
+:is(h1, h2, h3, h4, h5, h6) {
+    position: relative;
 }
 
-.anchor:hover {
-    color: black;
+:is(h1, h2, h3, h4, h5, h6) > a {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.anchor::before {
+    content: "\1f517";
+    position: absolute;
+    left: -2rem;
+    top: .3em;
+    font-size: 1rem;
 }
 
 .label::after {
