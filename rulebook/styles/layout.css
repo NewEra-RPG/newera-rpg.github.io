@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    --header-height: 6em;
+    --header-height: 4em;
     --footer-height: 6em;
     --layout-switch-width: 1200px;
 
@@ -11,7 +11,7 @@ body {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-rows: var(--header-height) auto var(--footer-height);
+    grid-template-rows: max-content auto var(--footer-height);
 }
 
 nav {
@@ -54,7 +54,8 @@ header {
 }
 
 main {
-    padding-inline-start: 8em;
+    margin-inline-start: 3em;
+    padding-inline: 2em;
     overflow-y: scroll;
 }
 
@@ -83,6 +84,10 @@ footer {
         right: unset;
         left: 0;
         justify-content: flex-start;
+    }
+
+    nav a {
+        justify-content: start;
     }
 
     main {

@@ -11,7 +11,20 @@ body {
 
 a {
     text-decoration: none;
+}
+
+:is(nav, header, footer) a {
     color: var(--menu-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+header a {
+    font-size: 200%;
 }
 
 header, footer {
@@ -43,6 +56,27 @@ footer > * {
     content: ": ";
 }
 
-.requirement:not(:last-child)::after {
+.inline-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+}
+
+.inline-list li {
+    display: inline;
+}
+
+.inline-list li:not(:last-child)::after {
     content: ", "
+}
+
+.specifications {
+    display: grid;
+}
+
+.hint {
+    font-weight: lighter;
+    font-size: 80%;
+    margin-inline-start: 1ch;
 }
