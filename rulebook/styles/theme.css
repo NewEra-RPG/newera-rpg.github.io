@@ -80,3 +80,9 @@ footer > * {
     font-size: 80%;
     margin-inline-start: 1ch;
 }
+
+.variants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2ch;
+}

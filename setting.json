@@ -5,8 +5,8 @@
     "primary": [
       {
         "id": "strength",
-        "name": "Stärke",
-        "description": "Stärke lässt einen Charakter physische Gewalt auf seine Umwelt ausüben. Sie\nhilft beim Verrücken von Möbeln ebenso wie bei der Umgestaltung der weltlichen\nGestalt von Feinden. Charaktere mit großer Kraft können Gegenstände und Personen\ntragen, werfen, zerren, schieben und auf verschiedenste Art demolieren."
+        "name": "Kraft",
+        "description": "Kraft lässt einen Charakter physische Gewalt auf seine Umwelt ausüben. Sie\nhilft beim Verrücken von Möbeln ebenso wie bei der Umgestaltung der weltlichen\nGestalt von Feinden. Charaktere mit großer Kraft können Gegenstände und Personen\ntragen, werfen, zerren, schieben und auf verschiedenste Art demolieren."
       },
       {
         "id": "agility",
@@ -20,8 +20,8 @@
       },
       {
         "id": "dexterity",
-        "name": "Geschick",
-        "description": "Geschick gibt an, wie schnell und sicher ein Charakter seine Hände und\nähnlich feinfühlige Gliedmaßen zu gebrauchen weiß. Geschick hilft beim Entwenden\nvon Habseligkeiten ebenso wie beim gezielten Platzieren eines geworfenen\nKüchenmessers in der Brust des Schurken, als auch bei der anschließenden\nEntfernung desselben aus der Wunde."
+        "name": "Geschicklichkeit",
+        "description": "Geschicklichkeit gibt an, wie schnell und sicher ein Charakter seine Hände und\nähnlich feinfühlige Gliedmaßen zu gebrauchen weiß. Geschicklichkeit hilft beim\nEntwenden von Habseligkeiten ebenso wie beim gezielten Platzieren eines geworfenen\nKüchenmessers in der Brust des Schurken, als auch bei der anschließenden\nEntfernung desselben aus der Wunde."
       },
       {
         "id": "memory",
@@ -39,10 +39,14 @@
         "id": "athletics",
         "dependencies": [
           {
-            "id": "strength"
+            "id": "strength",
+            "name": "Kraft",
+            "description": "Kraft lässt einen Charakter physische Gewalt auf seine Umwelt ausüben. Sie\nhilft beim Verrücken von Möbeln ebenso wie bei der Umgestaltung der weltlichen\nGestalt von Feinden. Charaktere mit großer Kraft können Gegenstände und Personen\ntragen, werfen, zerren, schieben und auf verschiedenste Art demolieren."
           },
           {
-            "id": "agility"
+            "id": "agility",
+            "name": "Gewandtheit",
+            "description": "Gewandtheit entscheidet darüber, wie ein Charakter sich bewegen kann und seinen\nKörper als Ganzes beherrscht. Ob bei einem wirbelnden Tanz, beim Balancieren auf\neinem Seil oder im Rhythmus eines Sattels. Ein gewandter Charakter gibt immer\neine gute Figur ab, wenn Schnelligkeit, Gleichgewicht, Eleganz und Körpergefühl\ngefragt sind."
           }
         ],
         "name": "Athletik",
@@ -52,36 +56,48 @@
         "id": "charisma",
         "dependencies": [
           {
-            "id": "agility"
+            "id": "agility",
+            "name": "Gewandtheit",
+            "description": "Gewandtheit entscheidet darüber, wie ein Charakter sich bewegen kann und seinen\nKörper als Ganzes beherrscht. Ob bei einem wirbelnden Tanz, beim Balancieren auf\neinem Seil oder im Rhythmus eines Sattels. Ein gewandter Charakter gibt immer\neine gute Figur ab, wenn Schnelligkeit, Gleichgewicht, Eleganz und Körpergefühl\ngefragt sind."
           },
           {
-            "id": "willpower"
+            "id": "willpower",
+            "name": "Wille",
+            "description": "Wille ist die geistige Antriebskraft eines Charakters und bestimmt,\nwie unnachgiebig ein Charakter seine Ziele verfolgen und diese gegenüber\nHindernissen und Widersachern durchzusetzen vermag. Willensstarke Charaktere\nsind in der Lage, sich schneller für einen Kurs zu entscheiden und Versuchungen\nzu widerstehen, welche sie von demselben abbringen könnten."
           }
         ],
-        "name": "Ausstrahlung",
-        "description": "Ausstrahlung beschreibt, wie viel Selbstvertrauen du ausstrahlst und wie die\nWahrnehmung anderer Menschen durch deine Bewegungsmuster und Körpersprache\nbeeinflusst wird. Mit einer positiven Ausstrahlung fällt es dir leichter, die\nAufmerksamkeit von Menschen auf dich zu ziehen und zu halten. Es ermöglicht dir,\nmit einem guten ersten Eindruck in eine Unterhaltung zu starten und erleichtert\nes dadurch, Menschen von deiner Sichtweise zu überzeugen."
+        "name": "Charisma",
+        "description": "Charisma beschreibt, wie viel Selbstvertrauen du ausstrahlst und wie die\nWahrnehmung anderer Menschen durch deine Bewegungsmuster und Körpersprache\nbeeinflusst wird. Mit einer charismatischen Ausstrahlung fällt es dir leichter, die\nAufmerksamkeit von Menschen auf dich zu ziehen und zu halten. Es ermöglicht dir,\nmit einem guten ersten Eindruck in eine Unterhaltung zu starten und erleichtert\nes dadurch, Menschen von deiner Sichtweise zu überzeugen."
       },
       {
         "id": "endurance",
         "dependencies": [
           {
-            "id": "willpower"
+            "id": "willpower",
+            "name": "Wille",
+            "description": "Wille ist die geistige Antriebskraft eines Charakters und bestimmt,\nwie unnachgiebig ein Charakter seine Ziele verfolgen und diese gegenüber\nHindernissen und Widersachern durchzusetzen vermag. Willensstarke Charaktere\nsind in der Lage, sich schneller für einen Kurs zu entscheiden und Versuchungen\nzu widerstehen, welche sie von demselben abbringen könnten."
           },
           {
-            "id": "strength"
+            "id": "strength",
+            "name": "Kraft",
+            "description": "Kraft lässt einen Charakter physische Gewalt auf seine Umwelt ausüben. Sie\nhilft beim Verrücken von Möbeln ebenso wie bei der Umgestaltung der weltlichen\nGestalt von Feinden. Charaktere mit großer Kraft können Gegenstände und Personen\ntragen, werfen, zerren, schieben und auf verschiedenste Art demolieren."
           }
         ],
-        "name": "Ausdauer",
-        "description": "Audauer lässt einen Charakter schwere Zeiten überstehen. Ein starker Wille und\nkörperliche Abhärtung ermöglichen es einem ausdauernden Charakter, Schmerzen zu\nertragen und sowohl Wunden als auch Entbehrungen wie Hunger und Kälte besser zu\nverkraften. Aber auch Märsche mit schwerem Gepäck und Kämpfe in schwerer Rüstung\nkönnen sie ertragen. Ausdauernden Charakteren fällt es auch leichter, andere von\nihrer körperlichen Überlegenheit zu überzeugen und dadurch einzuschüchtern."
+        "name": "Zähigkeit",
+        "description": "Zähigkeit lässt einen Charakter schwere Zeiten überstehen. Ein starker Wille und\nkörperliche Abhärtung ermöglichen es einem ausdauernden Charakter, Schmerzen zu\nertragen und sowohl Wunden als auch Entbehrungen wie Hunger und Kälte besser zu\nverkraften. Aber auch Märsche mit schwerem Gepäck und Kämpfe in schwerer Rüstung\nkönnen sie ertragen. Zähen Charakteren fällt es auch leichter, andere von\nihrer körperlichen Überlegenheit zu überzeugen und dadurch einzuschüchtern."
       },
       {
         "id": "crafting",
         "dependencies": [
           {
-            "id": "dexterity"
+            "id": "dexterity",
+            "name": "Geschicklichkeit",
+            "description": "Geschicklichkeit gibt an, wie schnell und sicher ein Charakter seine Hände und\nähnlich feinfühlige Gliedmaßen zu gebrauchen weiß. Geschicklichkeit hilft beim\nEntwenden von Habseligkeiten ebenso wie beim gezielten Platzieren eines geworfenen\nKüchenmessers in der Brust des Schurken, als auch bei der anschließenden\nEntfernung desselben aus der Wunde."
           },
           {
-            "id": "memory"
+            "id": "memory",
+            "name": "Gedächtnis",
+            "description": "Gedächtnis ermöglicht einem Charakter, sich Informationen aneignen und wieder\nabrufen zu können. Charaktere mit einem guten Gedächtnis können große Mengen\nvermeintlich nutzlosen Wissens aufnehmen und dies jahrelang mit sich\nherumtragen, bis sich schließlich eine Gelegenheit bietet, es nutzbringend\neinzusetzen."
           }
         ],
         "name": "Handwerk",
@@ -91,10 +107,14 @@
         "id": "insight",
         "dependencies": [
           {
-            "id": "memory"
+            "id": "memory",
+            "name": "Gedächtnis",
+            "description": "Gedächtnis ermöglicht einem Charakter, sich Informationen aneignen und wieder\nabrufen zu können. Charaktere mit einem guten Gedächtnis können große Mengen\nvermeintlich nutzlosen Wissens aufnehmen und dies jahrelang mit sich\nherumtragen, bis sich schließlich eine Gelegenheit bietet, es nutzbringend\neinzusetzen."
           },
           {
-            "id": "perception"
+            "id": "perception",
+            "name": "Wahrnehmung",
+            "description": "Wahrnehmung ist die Gesamtheit aller Sinne, mit deren Hilfe ein Charakter die\nWelt erlebt. Durch ihre Wahrnehmung erkennen Charaktere Gefahren frühzeitig,\nfinden Gegenstände als auch Jagdbeute und unterscheiden zwischen lebenspendender\nNahrung und tödlichem Gift."
           }
         ],
         "name": "Erkenntnis",
@@ -104,10 +124,14 @@
         "id": "precision",
         "dependencies": [
           {
-            "id": "perception"
+            "id": "perception",
+            "name": "Wahrnehmung",
+            "description": "Wahrnehmung ist die Gesamtheit aller Sinne, mit deren Hilfe ein Charakter die\nWelt erlebt. Durch ihre Wahrnehmung erkennen Charaktere Gefahren frühzeitig,\nfinden Gegenstände als auch Jagdbeute und unterscheiden zwischen lebenspendender\nNahrung und tödlichem Gift."
           },
           {
-            "id": "dexterity"
+            "id": "dexterity",
+            "name": "Geschicklichkeit",
+            "description": "Geschicklichkeit gibt an, wie schnell und sicher ein Charakter seine Hände und\nähnlich feinfühlige Gliedmaßen zu gebrauchen weiß. Geschicklichkeit hilft beim\nEntwenden von Habseligkeiten ebenso wie beim gezielten Platzieren eines geworfenen\nKüchenmessers in der Brust des Schurken, als auch bei der anschließenden\nEntfernung desselben aus der Wunde."
           }
         ],
         "name": "Präzision",
@@ -261,15 +285,15 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 8,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "animals",
-            "level": 1,
-            "name": "Tierkunde"
+            "name": "Tierkunde",
+            "level": 1
           }
         ],
         "talents": []
@@ -285,20 +309,20 @@
         "attributes": [
           {
             "id": "crafting",
-            "level": 8,
-            "name": "Handwerk"
+            "name": "Handwerk",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "animals",
-            "level": 2,
-            "name": "Tierkunde"
+            "name": "Tierkunde",
+            "level": 2
           },
           {
             "id": "nature",
-            "level": 1,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 1
           }
         ],
         "talents": []
@@ -314,15 +338,15 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 8,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "animals",
-            "level": 2,
-            "name": "Tierkunde"
+            "name": "Tierkunde",
+            "level": 2
           }
         ],
         "talents": []
@@ -338,20 +362,20 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 9,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 9
           },
           {
             "id": "dexterity",
-            "level": 7,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 7
           }
         ],
         "skills": [
           {
             "id": "animals",
-            "level": 3,
-            "name": "Tierkunde"
+            "name": "Tierkunde",
+            "level": 3
           }
         ],
         "talents": []
@@ -367,13 +391,13 @@
         "attributes": [
           {
             "id": "agility",
-            "level": 8,
-            "name": "Gewandtheit"
+            "name": "Gewandtheit",
+            "level": 8
           },
           {
             "id": "dexterity",
-            "level": 7,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 7
           }
         ],
         "skills": [],
@@ -395,20 +419,20 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "healing",
-            "level": 2,
-            "name": "Heilkunde"
+            "name": "Heilkunde",
+            "level": 2
           },
           {
             "id": "animals",
-            "level": 2,
-            "name": "Tierkunde"
+            "name": "Tierkunde",
+            "level": 2
           }
         ],
         "talents": []
@@ -424,15 +448,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 11,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "animals",
-            "level": 3,
-            "name": "Tierkunde"
+            "name": "Tierkunde",
+            "level": 3
           }
         ],
         "talents": [
@@ -453,15 +477,15 @@
         "attributes": [
           {
             "id": "precision",
-            "level": 8,
-            "name": "Präzision"
+            "name": "Präzision",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "blade_weapon",
-            "level": 2,
-            "name": "Klingenwaffen"
+            "name": "Klingenwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -477,15 +501,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 8,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "blade_weapon",
-            "level": 3,
-            "name": "Klingenwaffen"
+            "name": "Klingenwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -501,15 +525,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 11,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "blade_weapon",
-            "level": 3,
-            "name": "Klingenwaffen"
+            "name": "Klingenwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -525,20 +549,20 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 7,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 7
           },
           {
             "id": "precision",
-            "level": 11,
-            "name": "Präzision"
+            "name": "Präzision",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "blade_weapon",
-            "level": 3,
-            "name": "Klingenwaffen"
+            "name": "Klingenwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -554,15 +578,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "impact_weapon",
-            "level": 2,
-            "name": "Wuchtwaffen"
+            "name": "Wuchtwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -578,15 +602,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "impact_weapon",
-            "level": 2,
-            "name": "Wuchtwaffen"
+            "name": "Wuchtwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -602,15 +626,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "impact_weapon",
-            "level": 2,
-            "name": "Wuchtwaffen"
+            "name": "Wuchtwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -626,15 +650,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 8,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "impact_weapon",
-            "level": 2,
-            "name": "Wuchtwaffen"
+            "name": "Wuchtwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -650,15 +674,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "impact_weapon",
-            "level": 2,
-            "name": "Wuchtwaffen"
+            "name": "Wuchtwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -674,15 +698,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 13,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "impact_weapon",
-            "level": 3,
-            "name": "Wuchtwaffen"
+            "name": "Wuchtwaffen",
+            "level": 3
           }
         ],
         "talents": [
@@ -703,15 +727,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "melee",
-            "level": 2,
-            "name": "Nahkampf"
+            "name": "Nahkampf",
+            "level": 2
           }
         ],
         "talents": []
@@ -727,15 +751,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 11,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "melee",
-            "level": 3,
-            "name": "Nahkampf"
+            "name": "Nahkampf",
+            "level": 3
           }
         ],
         "talents": []
@@ -751,15 +775,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "missile_weapon",
-            "level": 3,
-            "name": "Wurfwaffen"
+            "name": "Wurfwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -775,15 +799,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "missile_weapon",
-            "level": 3,
-            "name": "Wurfwaffen"
+            "name": "Wurfwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -799,15 +823,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "missile_weapon",
-            "level": 3,
-            "name": "Wurfwaffen"
+            "name": "Wurfwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -823,15 +847,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 11,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "missile_weapon",
-            "level": 2,
-            "name": "Wurfwaffen"
+            "name": "Wurfwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -847,13 +871,13 @@
         "attributes": [
           {
             "id": "willpower",
-            "level": 11,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 11
           },
           {
             "id": "athletics",
-            "level": 11,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 11
           }
         ],
         "skills": [],
@@ -870,8 +894,8 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 13,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 13
           }
         ],
         "skills": [],
@@ -893,15 +917,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 2,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -917,15 +941,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 9,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 3,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -941,15 +965,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 8,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 2,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -965,20 +989,20 @@
         "attributes": [
           {
             "id": "willpower",
-            "level": 9,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 9
           },
           {
             "id": "athletics",
-            "level": 7,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 7
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 3,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -994,20 +1018,20 @@
         "attributes": [
           {
             "id": "strength",
-            "level": 7,
-            "name": "Stärke"
+            "name": "Kraft",
+            "level": 7
           },
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 2,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 2
           }
         ],
         "talents": [
@@ -1028,15 +1052,15 @@
         "attributes": [
           {
             "id": "athletics",
-            "level": 8,
-            "name": "Athletik"
+            "name": "Athletik",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 2,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -1052,15 +1076,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 13,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "pole_weapon",
-            "level": 4,
-            "name": "Stangenwaffen"
+            "name": "Stangenwaffen",
+            "level": 4
           }
         ],
         "talents": [
@@ -1081,15 +1105,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 10,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 10
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 2,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -1105,15 +1129,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 9,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 2,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -1129,15 +1153,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 9,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 2,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -1153,20 +1177,20 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 7,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 7
           },
           {
             "id": "strength",
-            "level": 7,
-            "name": "Stärke"
+            "name": "Kraft",
+            "level": 7
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 2,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 2
           }
         ],
         "talents": []
@@ -1182,15 +1206,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 3,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -1206,15 +1230,15 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 11,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 3,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -1230,15 +1254,15 @@
         "attributes": [
           {
             "id": "precision",
-            "level": 13,
-            "name": "Präzision"
+            "name": "Präzision",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 5,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 5
           }
         ],
         "talents": [
@@ -1259,15 +1283,15 @@
         "attributes": [
           {
             "id": "willpower",
-            "level": 11,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 3,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -1283,15 +1307,15 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 11,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 3,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 3
           }
         ],
         "talents": []
@@ -1307,15 +1331,15 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 13,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 4,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 4
           }
         ],
         "talents": []
@@ -1331,15 +1355,15 @@
         "attributes": [
           {
             "id": "precision",
-            "level": 13,
-            "name": "Präzision"
+            "name": "Präzision",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "range_weapon",
-            "level": 4,
-            "name": "Fernwaffen"
+            "name": "Fernwaffen",
+            "level": 4
           }
         ],
         "talents": [
@@ -1360,15 +1384,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 12,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 12
           }
         ],
         "skills": [
           {
             "id": "language",
-            "level": 4,
-            "name": "Sprache"
+            "name": "Sprache",
+            "level": 4
           }
         ],
         "talents": [
@@ -1389,15 +1413,15 @@
         "attributes": [
           {
             "id": "precision",
-            "level": 7,
-            "name": "Präzision"
+            "name": "Präzision",
+            "level": 7
           }
         ],
         "skills": [
           {
             "id": "language",
-            "level": 2,
-            "name": "Sprache"
+            "name": "Sprache",
+            "level": 2
           }
         ],
         "talents": []
@@ -1413,20 +1437,20 @@
         "attributes": [
           {
             "id": "memory",
-            "level": 8,
-            "name": "Gedächtnis"
+            "name": "Gedächtnis",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "language",
-            "level": 2,
-            "name": "Sprache"
+            "name": "Sprache",
+            "level": 2
           },
           {
             "id": "trading",
-            "level": 2,
-            "name": "Handel"
+            "name": "Handel",
+            "level": 2
           }
         ],
         "talents": []
@@ -1442,20 +1466,20 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 8,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "language",
-            "level": 2,
-            "name": "Sprache"
+            "name": "Sprache",
+            "level": 2
           },
           {
             "id": "deception",
-            "level": 2,
-            "name": "Täuschung"
+            "name": "Täuschung",
+            "level": 2
           }
         ],
         "talents": []
@@ -1471,20 +1495,20 @@
         "attributes": [
           {
             "id": "crafting",
-            "level": 11,
-            "name": "Handwerk"
+            "name": "Handwerk",
+            "level": 11
           },
           {
             "id": "willpower",
-            "level": 9,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "healing",
-            "level": 1,
-            "name": "Heilkunde"
+            "name": "Heilkunde",
+            "level": 1
           }
         ],
         "talents": []
@@ -1500,15 +1524,15 @@
         "attributes": [
           {
             "id": "crafting",
-            "level": 12,
-            "name": "Handwerk"
+            "name": "Handwerk",
+            "level": 12
           }
         ],
         "skills": [
           {
             "id": "nature",
-            "level": 2,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 2
           }
         ],
         "talents": []
@@ -1524,15 +1548,15 @@
         "attributes": [
           {
             "id": "agility",
-            "level": 9,
-            "name": "Gewandtheit"
+            "name": "Gewandtheit",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "acrobatics",
-            "level": 2,
-            "name": "Akrobatik"
+            "name": "Akrobatik",
+            "level": 2
           }
         ],
         "talents": []
@@ -1548,15 +1572,15 @@
         "attributes": [
           {
             "id": "endurance",
-            "level": 9,
-            "name": "Ausdauer"
+            "name": "Zähigkeit",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "climbing",
-            "level": 2,
-            "name": "Klettern"
+            "name": "Klettern",
+            "level": 2
           }
         ],
         "talents": []
@@ -1572,8 +1596,8 @@
         "attributes": [
           {
             "id": "strength",
-            "level": 7,
-            "name": "Stärke"
+            "name": "Kraft",
+            "level": 7
           }
         ],
         "skills": [],
@@ -1590,8 +1614,8 @@
         "attributes": [
           {
             "id": "endurance",
-            "level": 9,
-            "name": "Ausdauer"
+            "name": "Zähigkeit",
+            "level": 9
           }
         ],
         "skills": [],
@@ -1608,15 +1632,15 @@
         "attributes": [
           {
             "id": "memory",
-            "level": 11,
-            "name": "Gedächtnis"
+            "name": "Gedächtnis",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "history",
-            "level": 3,
-            "name": "Geschichte"
+            "name": "Geschichte",
+            "level": 3
           }
         ],
         "talents": []
@@ -1632,15 +1656,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 13,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "mechanics",
-            "level": 5,
-            "name": "Mechanismen"
+            "name": "Mechanismen",
+            "level": 5
           }
         ],
         "talents": [
@@ -1665,15 +1689,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 13,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 13
           }
         ],
         "skills": [
           {
             "id": "world",
-            "level": 5,
-            "name": "Weltkunde"
+            "name": "Weltkunde",
+            "level": 5
           }
         ],
         "talents": [
@@ -1694,8 +1718,8 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 9,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 9
           }
         ],
         "skills": [],
@@ -1712,8 +1736,8 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 9,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 9
           }
         ],
         "skills": [],
@@ -1730,8 +1754,8 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 9,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 9
           }
         ],
         "skills": [],
@@ -1748,8 +1772,8 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 9,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 9
           }
         ],
         "skills": [],
@@ -1766,15 +1790,15 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 11,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "deception",
-            "level": 2,
-            "name": "Täuschung"
+            "name": "Täuschung",
+            "level": 2
           }
         ],
         "talents": [
@@ -1795,15 +1819,15 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 9,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "society",
-            "level": 2,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 2
           }
         ],
         "talents": []
@@ -1819,15 +1843,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "society",
-            "level": 2,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 2
           }
         ],
         "talents": []
@@ -1843,15 +1867,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 11,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "alertness",
-            "level": 3,
-            "name": "Aufmerksamkeit"
+            "name": "Aufmerksamkeit",
+            "level": 3
           }
         ],
         "talents": [
@@ -1872,25 +1896,25 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 8,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "deception",
-            "level": 2,
-            "name": "Täuschung"
+            "name": "Täuschung",
+            "level": 2
           },
           {
             "id": "society",
-            "level": 2,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 2
           },
           {
             "id": "language",
-            "level": 1,
-            "name": "Sprache"
+            "name": "Sprache",
+            "level": 1
           }
         ],
         "talents": []
@@ -1906,20 +1930,20 @@
         "attributes": [
           {
             "id": "memory",
-            "level": 9,
-            "name": "Gedächtnis"
+            "name": "Gedächtnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "society",
-            "level": 3,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 3
           },
           {
             "id": "tactics",
-            "level": 1,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 1
           }
         ],
         "talents": []
@@ -1935,20 +1959,20 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 11,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "alertness",
-            "level": 3,
-            "name": "Aufmerksamkeit"
+            "name": "Aufmerksamkeit",
+            "level": 3
           },
           {
             "id": "society",
-            "level": 2,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 2
           }
         ],
         "talents": []
@@ -1964,15 +1988,15 @@
         "attributes": [
           {
             "id": "memory",
-            "level": 8,
-            "name": "Gedächtnis"
+            "name": "Gedächtnis",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "society",
-            "level": 3,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 3
           }
         ],
         "talents": []
@@ -1988,15 +2012,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "language",
-            "level": 3,
-            "name": "Sprache"
+            "name": "Sprache",
+            "level": 3
           }
         ],
         "talents": [
@@ -2017,15 +2041,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "history",
-            "level": 3,
-            "name": "Geschichte"
+            "name": "Geschichte",
+            "level": 3
           }
         ],
         "talents": [
@@ -2046,20 +2070,20 @@
         "attributes": [
           {
             "id": "endurance",
-            "level": 9,
-            "name": "Ausdauer"
+            "name": "Zähigkeit",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "society",
-            "level": 1,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 1
           },
           {
             "id": "deception",
-            "level": 1,
-            "name": "Täuschung"
+            "name": "Täuschung",
+            "level": 1
           }
         ],
         "talents": []
@@ -2075,20 +2099,20 @@
         "attributes": [
           {
             "id": "agility",
-            "level": 8,
-            "name": "Gewandtheit"
+            "name": "Gewandtheit",
+            "level": 8
           },
           {
             "id": "perception",
-            "level": 8,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "stealth",
-            "level": 2,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 2
           }
         ],
         "talents": []
@@ -2104,20 +2128,20 @@
         "attributes": [
           {
             "id": "willpower",
-            "level": 9,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 9
           },
           {
             "id": "perception",
-            "level": 9,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "stealth",
-            "level": 3,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 3
           }
         ],
         "talents": [
@@ -2138,25 +2162,25 @@
         "attributes": [
           {
             "id": "agility",
-            "level": 11,
-            "name": "Gewandtheit"
+            "name": "Gewandtheit",
+            "level": 11
           },
           {
             "id": "perception",
-            "level": 11,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "stealth",
-            "level": 4,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 4
           },
           {
             "id": "alertness",
-            "level": 2,
-            "name": "Aufmerksamkeit"
+            "name": "Aufmerksamkeit",
+            "level": 2
           }
         ],
         "talents": [
@@ -2177,20 +2201,20 @@
         "attributes": [
           {
             "id": "charisma",
-            "level": 12,
-            "name": "Ausstrahlung"
+            "name": "Charisma",
+            "level": 12
           }
         ],
         "skills": [
           {
             "id": "stealth",
-            "level": 3,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 3
           },
           {
             "id": "society",
-            "level": 2,
-            "name": "Gesellschaft"
+            "name": "Gesellschaft",
+            "level": 2
           }
         ],
         "talents": [
@@ -2211,20 +2235,20 @@
         "attributes": [
           {
             "id": "crafting",
-            "level": 8,
-            "name": "Handwerk"
+            "name": "Handwerk",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "nature",
-            "level": 2,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 2
           },
           {
             "id": "woodworking",
-            "level": 1,
-            "name": "Holzverarbeitung"
+            "name": "Holzverarbeitung",
+            "level": 1
           }
         ],
         "talents": []
@@ -2240,20 +2264,20 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 8,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "woodworking",
-            "level": 2,
-            "name": "Holzverarbeitung"
+            "name": "Holzverarbeitung",
+            "level": 2
           },
           {
             "id": "nature",
-            "level": 1,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 1
           }
         ],
         "talents": []
@@ -2269,15 +2293,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "world",
-            "level": 3,
-            "name": "Weltkunde"
+            "name": "Weltkunde",
+            "level": 3
           }
         ],
         "talents": [
@@ -2298,15 +2322,15 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "nature",
-            "level": 2,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 2
           }
         ],
         "talents": []
@@ -2322,20 +2346,20 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 11,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "nature",
-            "level": 3,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 3
           },
           {
             "id": "world",
-            "level": 3,
-            "name": "Weltkunde"
+            "name": "Weltkunde",
+            "level": 3
           }
         ],
         "talents": [
@@ -2356,20 +2380,20 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 11,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "swimming",
-            "level": 3,
-            "name": "Schwimmen"
+            "name": "Schwimmen",
+            "level": 3
           },
           {
             "id": "nature",
-            "level": 3,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 3
           }
         ],
         "talents": [
@@ -2390,20 +2414,20 @@
         "attributes": [
           {
             "id": "perception",
-            "level": 11,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "tactics",
-            "level": 3,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 3
           },
           {
             "id": "nature",
-            "level": 3,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 3
           }
         ],
         "talents": [
@@ -2424,20 +2448,20 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "alertness",
-            "level": 3,
-            "name": "Aufmerksamkeit"
+            "name": "Aufmerksamkeit",
+            "level": 3
           },
           {
             "id": "nature",
-            "level": 2,
-            "name": "Naturkunde"
+            "name": "Naturkunde",
+            "level": 2
           }
         ],
         "talents": []
@@ -2453,20 +2477,20 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 9,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 9
           }
         ],
         "skills": [
           {
             "id": "alertness",
-            "level": 3,
-            "name": "Aufmerksamkeit"
+            "name": "Aufmerksamkeit",
+            "level": 3
           },
           {
             "id": "tactics",
-            "level": 2,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 2
           }
         ],
         "talents": []
@@ -2482,25 +2506,25 @@
         "attributes": [
           {
             "id": "agility",
-            "level": 8,
-            "name": "Gewandtheit"
+            "name": "Gewandtheit",
+            "level": 8
           },
           {
             "id": "perception",
-            "level": 8,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "stealth",
-            "level": 3,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 3
           },
           {
             "id": "tactics",
-            "level": 2,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 2
           }
         ],
         "talents": []
@@ -2516,20 +2540,20 @@
         "attributes": [
           {
             "id": "dexterity",
-            "level": 8,
-            "name": "Geschick"
+            "name": "Geschicklichkeit",
+            "level": 8
           },
           {
             "id": "willpower",
-            "level": 8,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 8
           }
         ],
         "skills": [
           {
             "id": "tactics",
-            "level": 2,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 2
           }
         ],
         "talents": []
@@ -2545,25 +2569,25 @@
         "attributes": [
           {
             "id": "willpower",
-            "level": 10,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 10
           },
           {
             "id": "perception",
-            "level": 10,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 10
           }
         ],
         "skills": [
           {
             "id": "tactics",
-            "level": 3,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 3
           },
           {
             "id": "stealth",
-            "level": 1,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 1
           }
         ],
         "talents": [
@@ -2584,25 +2608,25 @@
         "attributes": [
           {
             "id": "willpower",
-            "level": 12,
-            "name": "Wille"
+            "name": "Wille",
+            "level": 12
           },
           {
             "id": "perception",
-            "level": 12,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 12
           }
         ],
         "skills": [
           {
             "id": "tactics",
-            "level": 4,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 4
           },
           {
             "id": "stealth",
-            "level": 2,
-            "name": "Heimlichkeit"
+            "name": "Heimlichkeit",
+            "level": 2
           }
         ],
         "talents": [
@@ -2627,20 +2651,20 @@
         "attributes": [
           {
             "id": "agility",
-            "level": 11,
-            "name": "Gewandtheit"
+            "name": "Gewandtheit",
+            "level": 11
           },
           {
             "id": "perception",
-            "level": 11,
-            "name": "Wahrnehmung"
+            "name": "Wahrnehmung",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "tactics",
-            "level": 3,
-            "name": "Taktik"
+            "name": "Taktik",
+            "level": 3
           }
         ],
         "talents": [
@@ -2661,25 +2685,25 @@
         "attributes": [
           {
             "id": "insight",
-            "level": 11,
-            "name": "Erkenntnis"
+            "name": "Erkenntnis",
+            "level": 11
           }
         ],
         "skills": [
           {
             "id": "mechanics",
-            "level": 3,
-            "name": "Mechanismen"
+            "name": "Mechanismen",
+            "level": 3
           },
           {
             "id": "metalworking",
-            "level": 1,
-            "name": "Metallverarbeitung"
+            "name": "Metallverarbeitung",
+            "level": 1
           },
           {
             "id": "blending",
-            "level": 1,
-            "name": "Mischen"
+            "name": "Mischen",
+            "level": 1
           }
         ],
         "talents": []
@@ -2694,23 +2718,28 @@
       "subtypes": [
         {
           "id": "axe",
-          "name": "Axt"
+          "name": "Axt",
+          "description": ""
         },
         {
           "id": "mace",
-          "name": "Keule"
+          "name": "Keule",
+          "description": ""
         },
         {
           "id": "hammer",
-          "name": "Hammer"
+          "name": "Hammer",
+          "description": ""
         },
         {
           "id": "stick",
-          "name": "Stock"
+          "name": "Stock",
+          "description": ""
         },
         {
           "id": "chain",
-          "name": "Kette"
+          "name": "Kette",
+          "description": ""
         }
       ],
       "name": "Wuchtwaffe",
@@ -2721,19 +2750,23 @@
       "subtypes": [
         {
           "id": "knife",
-          "name": "Messer"
+          "name": "Messer",
+          "description": ""
         },
         {
           "id": "sword_1h",
-          "name": "Schwert (einhändig)"
+          "name": "Schwert (einhändig)",
+          "description": ""
         },
         {
           "id": "sword_2h",
-          "name": "Schwert (zweihändig)"
+          "name": "Schwert (zweihändig)",
+          "description": ""
         },
         {
           "id": "rapier",
-          "name": "Degen"
+          "name": "Degen",
+          "description": ""
         }
       ],
       "name": "Klingenwaffe",
@@ -2744,27 +2777,33 @@
       "subtypes": [
         {
           "id": "gleve",
-          "name": "Gleve"
+          "name": "Gleve",
+          "description": ""
         },
         {
           "id": "longaxe",
-          "name": "Langaxt"
+          "name": "Langaxt",
+          "description": ""
         },
         {
           "id": "spear",
-          "name": "Speer"
+          "name": "Speer",
+          "description": ""
         },
         {
           "id": "pike",
-          "name": "Spieß"
+          "name": "Spieß",
+          "description": ""
         },
         {
           "id": "lance",
-          "name": "Lanze"
+          "name": "Lanze",
+          "description": ""
         },
         {
           "id": "staff",
-          "name": "Stab"
+          "name": "Stab",
+          "description": ""
         }
       ],
       "name": "Stangenwaffe",
@@ -2775,19 +2814,23 @@
       "subtypes": [
         {
           "id": "slingshot",
-          "name": "Schleuder"
+          "name": "Schleuder",
+          "description": ""
         },
         {
           "id": "throwing_knive",
-          "name": "Wurfmesser"
+          "name": "Wurfmesser",
+          "description": ""
         },
         {
           "id": "throwing_axe",
-          "name": "Wurfaxt"
+          "name": "Wurfaxt",
+          "description": ""
         },
         {
           "id": "throwing_spear",
-          "name": "Wurfspeer"
+          "name": "Wurfspeer",
+          "description": ""
         }
       ],
       "name": "Wurfwaffe",
@@ -2798,23 +2841,28 @@
       "subtypes": [
         {
           "id": "bow",
-          "name": "Bogen"
+          "name": "Bogen",
+          "description": ""
         },
         {
           "id": "crossbow",
-          "name": "Armbrust"
+          "name": "Armbrust",
+          "description": ""
         },
         {
           "id": "handgun",
-          "name": "Pistole"
+          "name": "Pistole",
+          "description": ""
         },
         {
           "id": "shotgun",
-          "name": "Flinte"
+          "name": "Flinte",
+          "description": ""
         },
         {
           "id": "rifle",
-          "name": "Gewehr"
+          "name": "Gewehr",
+          "description": ""
         }
       ],
       "name": "Fernwaffe",
@@ -3234,7 +3282,8 @@
           "handedness": 1,
           "type": {
             "id": "blade",
-            "name": "Klingenwaffe"
+            "name": "Klingenwaffe",
+            "description": ""
           },
           "subtype": {
             "id": "knife",
@@ -3384,7 +3433,8 @@
           "handedness": 1,
           "type": {
             "id": "blade",
-            "name": "Klingenwaffe"
+            "name": "Klingenwaffe",
+            "description": ""
           },
           "subtype": {
             "id": "sword_1h",
@@ -3497,633 +3547,807 @@
       ],
       "armors": [
         {
-          "id": "arm_protector",
-          "cost": 40,
-          "availability": "village",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 4,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
+          "id": "head",
+          "hindrance": {
+            "id": "perception",
+            "name": "Wahrnehmung"
           },
-          "hindrance": 2,
-          "category": "arms",
-          "name": "Armschützer",
+          "price": 10,
+          "tiers": [
+            {
+              "id": "clothing",
+              "protection": 1,
+              "hindrance": 0,
+              "priceFactor": 1,
+              "availability": "outskirts",
+              "weight": 0,
+              "price": 10,
+              "name": "Kleidung",
+              "description": null
+            },
+            {
+              "id": "light_armor",
+              "protection": 3,
+              "hindrance": 1,
+              "priceFactor": 2.5,
+              "availability": "village",
+              "weight": 0,
+              "price": 25,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 50,
+                  "protection": 4,
+                  "hindrance": 1,
+                  "weight": 0,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 50,
+                  "protection": 3,
+                  "hindrance": 0,
+                  "weight": 0,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 100,
+                  "protection": 4,
+                  "hindrance": 0,
+                  "weight": 0,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Leichte Rüstung",
+              "description": null
+            },
+            {
+              "id": "medium_armor",
+              "protection": 6,
+              "hindrance": 3,
+              "priceFactor": 6,
+              "availability": "town",
+              "weight": 1,
+              "price": 60,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 120,
+                  "protection": 8,
+                  "hindrance": 3,
+                  "weight": 1,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 120,
+                  "protection": 6,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 240,
+                  "protection": 8,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Mittlere Rüstung",
+              "description": null
+            },
+            {
+              "id": "heavy_armor",
+              "protection": 10,
+              "hindrance": 6,
+              "priceFactor": 10,
+              "availability": "city",
+              "weight": 1,
+              "price": 100,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 200,
+                  "protection": 13,
+                  "hindrance": 6,
+                  "weight": 2,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 200,
+                  "protection": 10,
+                  "hindrance": 5,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 400,
+                  "protection": 13,
+                  "hindrance": 5,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Schwere Rüstung",
+              "description": null
+            }
+          ],
+          "name": "Kopf",
           "description": null
         },
         {
-          "id": "arm_bracers",
-          "cost": 150,
-          "availability": "town",
-          "weight": 2,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 8,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
+          "id": "torso",
+          "hindrance": {
+            "id": "agility",
+            "name": "Gewandtheit"
           },
-          "hindrance": 4,
-          "category": "arms",
-          "name": "Armschienen",
+          "price": 40,
+          "tiers": [
+            {
+              "id": "clothing",
+              "protection": 1,
+              "hindrance": 0,
+              "priceFactor": 1,
+              "availability": "outskirts",
+              "weight": 0,
+              "price": 40,
+              "name": "Kleidung",
+              "description": null
+            },
+            {
+              "id": "light_armor",
+              "protection": 3,
+              "hindrance": 1,
+              "priceFactor": 2.5,
+              "availability": "village",
+              "weight": 1,
+              "price": 100,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 200,
+                  "protection": 4,
+                  "hindrance": 1,
+                  "weight": 1,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 200,
+                  "protection": 3,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 400,
+                  "protection": 4,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Leichte Rüstung",
+              "description": null
+            },
+            {
+              "id": "medium_armor",
+              "protection": 6,
+              "hindrance": 3,
+              "priceFactor": 6,
+              "availability": "town",
+              "weight": 2,
+              "price": 240,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 480,
+                  "protection": 8,
+                  "hindrance": 3,
+                  "weight": 3,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 480,
+                  "protection": 6,
+                  "hindrance": 2,
+                  "weight": 2,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 960,
+                  "protection": 8,
+                  "hindrance": 2,
+                  "weight": 2,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Mittlere Rüstung",
+              "description": null
+            },
+            {
+              "id": "heavy_armor",
+              "protection": 10,
+              "hindrance": 6,
+              "priceFactor": 10,
+              "availability": "city",
+              "weight": 4,
+              "price": 400,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 800,
+                  "protection": 13,
+                  "hindrance": 6,
+                  "weight": 6,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 800,
+                  "protection": 10,
+                  "hindrance": 5,
+                  "weight": 4,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 1600,
+                  "protection": 13,
+                  "hindrance": 5,
+                  "weight": 4,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Schwere Rüstung",
+              "description": null
+            }
+          ],
+          "name": "Rumpf",
           "description": null
         },
         {
-          "id": "light_shirt",
-          "cost": 10,
-          "availability": "outskirts",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 1,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
+          "id": "arms",
+          "hindrance": {
+            "id": "agility",
+            "name": "Gewandtheit"
           },
-          "hindrance": 2,
-          "category": "body",
-          "name": "Leichte Kleidung",
+          "price": 10,
+          "tiers": [
+            {
+              "id": "clothing",
+              "protection": 1,
+              "hindrance": 0,
+              "priceFactor": 1,
+              "availability": "outskirts",
+              "weight": 0,
+              "price": 10,
+              "name": "Kleidung",
+              "description": null
+            },
+            {
+              "id": "light_armor",
+              "protection": 3,
+              "hindrance": 1,
+              "priceFactor": 2.5,
+              "availability": "village",
+              "weight": 1,
+              "price": 25,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 50,
+                  "protection": 4,
+                  "hindrance": 1,
+                  "weight": 1,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 50,
+                  "protection": 3,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 100,
+                  "protection": 4,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Leichte Rüstung",
+              "description": null
+            },
+            {
+              "id": "medium_armor",
+              "protection": 6,
+              "hindrance": 3,
+              "priceFactor": 6,
+              "availability": "town",
+              "weight": 1,
+              "price": 60,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 120,
+                  "protection": 8,
+                  "hindrance": 3,
+                  "weight": 2,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 120,
+                  "protection": 6,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 240,
+                  "protection": 8,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Mittlere Rüstung",
+              "description": null
+            },
+            {
+              "id": "heavy_armor",
+              "protection": 10,
+              "hindrance": 6,
+              "priceFactor": 10,
+              "availability": "city",
+              "weight": 2,
+              "price": 100,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 200,
+                  "protection": 13,
+                  "hindrance": 6,
+                  "weight": 3,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 200,
+                  "protection": 10,
+                  "hindrance": 5,
+                  "weight": 2,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 400,
+                  "protection": 13,
+                  "hindrance": 5,
+                  "weight": 2,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Schwere Rüstung",
+              "description": null
+            }
+          ],
+          "name": "Arme",
           "description": null
         },
         {
-          "id": "heavy_shirt",
-          "cost": 20,
-          "availability": "village",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 2,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
+          "id": "hands",
+          "hindrance": {
+            "id": "dexterity",
+            "name": "Geschicklichkeit"
           },
-          "hindrance": 2,
-          "category": "body",
-          "name": "Feste Kleidung",
+          "price": 10,
+          "tiers": [
+            {
+              "id": "clothing",
+              "protection": 1,
+              "hindrance": 0,
+              "priceFactor": 1,
+              "availability": "outskirts",
+              "weight": 0,
+              "price": 10,
+              "name": "Kleidung",
+              "description": null
+            },
+            {
+              "id": "light_armor",
+              "protection": 3,
+              "hindrance": 1,
+              "priceFactor": 2.5,
+              "availability": "village",
+              "weight": 0,
+              "price": 25,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 50,
+                  "protection": 4,
+                  "hindrance": 1,
+                  "weight": 0,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 50,
+                  "protection": 3,
+                  "hindrance": 0,
+                  "weight": 0,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 100,
+                  "protection": 4,
+                  "hindrance": 0,
+                  "weight": 0,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Leichte Rüstung",
+              "description": null
+            },
+            {
+              "id": "medium_armor",
+              "protection": 6,
+              "hindrance": 3,
+              "priceFactor": 6,
+              "availability": "town",
+              "weight": 1,
+              "price": 60,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 120,
+                  "protection": 8,
+                  "hindrance": 3,
+                  "weight": 1,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 120,
+                  "protection": 6,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 240,
+                  "protection": 8,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Mittlere Rüstung",
+              "description": null
+            },
+            {
+              "id": "heavy_armor",
+              "protection": 10,
+              "hindrance": 6,
+              "priceFactor": 10,
+              "availability": "city",
+              "weight": 1,
+              "price": 100,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 200,
+                  "protection": 13,
+                  "hindrance": 6,
+                  "weight": 2,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 200,
+                  "protection": 10,
+                  "hindrance": 5,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 400,
+                  "protection": 13,
+                  "hindrance": 5,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Schwere Rüstung",
+              "description": null
+            }
+          ],
+          "name": "Hände",
           "description": null
         },
         {
-          "id": "leather_vest",
-          "cost": 40,
-          "availability": "town",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 3,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
+          "id": "legs",
+          "hindrance": {
+            "id": "agility",
+            "name": "Gewandtheit"
           },
-          "hindrance": 2,
-          "category": "body",
-          "name": "Lederweste",
+          "price": 20,
+          "tiers": [
+            {
+              "id": "clothing",
+              "protection": 1,
+              "hindrance": 0,
+              "priceFactor": 1,
+              "availability": "outskirts",
+              "weight": 0,
+              "price": 20,
+              "name": "Kleidung",
+              "description": null
+            },
+            {
+              "id": "light_armor",
+              "protection": 3,
+              "hindrance": 1,
+              "priceFactor": 2.5,
+              "availability": "village",
+              "weight": 1,
+              "price": 50,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 100,
+                  "protection": 4,
+                  "hindrance": 1,
+                  "weight": 1,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 100,
+                  "protection": 3,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 200,
+                  "protection": 4,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Leichte Rüstung",
+              "description": null
+            },
+            {
+              "id": "medium_armor",
+              "protection": 6,
+              "hindrance": 3,
+              "priceFactor": 6,
+              "availability": "town",
+              "weight": 1,
+              "price": 120,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 240,
+                  "protection": 8,
+                  "hindrance": 3,
+                  "weight": 2,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 240,
+                  "protection": 6,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 480,
+                  "protection": 8,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Mittlere Rüstung",
+              "description": null
+            },
+            {
+              "id": "heavy_armor",
+              "protection": 10,
+              "hindrance": 6,
+              "priceFactor": 10,
+              "availability": "city",
+              "weight": 2,
+              "price": 200,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 400,
+                  "protection": 13,
+                  "hindrance": 6,
+                  "weight": 3,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 400,
+                  "protection": 10,
+                  "hindrance": 5,
+                  "weight": 2,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 800,
+                  "protection": 13,
+                  "hindrance": 5,
+                  "weight": 2,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Schwere Rüstung",
+              "description": null
+            }
+          ],
+          "name": "Beine",
           "description": null
         },
         {
-          "id": "leather_jacket",
-          "cost": 60,
-          "availability": "town",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 3,
-            "arms": 2,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
+          "id": "feet",
+          "hindrance": {
+            "id": "agility",
+            "name": "Gewandtheit"
           },
-          "hindrance": 3,
-          "category": "body",
-          "name": "Lederjacke",
-          "description": null
-        },
-        {
-          "id": "leather_armor",
-          "cost": 100,
-          "availability": "town",
-          "weight": 2,
-          "protection": {
-            "head": 0,
-            "body": 4,
-            "arms": 3,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 4,
-          "category": "body",
-          "name": "Lederrüstung",
-          "description": null
-        },
-        {
-          "id": "mail_shirt",
-          "cost": 300,
-          "availability": "city",
-          "weight": 5,
-          "protection": {
-            "head": 0,
-            "body": 6,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 3,
-          "category": "body",
-          "name": "Kettenhemd",
-          "description": null
-        },
-        {
-          "id": "mail_armor",
-          "cost": 400,
-          "availability": "city",
-          "weight": 6,
-          "protection": {
-            "head": 0,
-            "body": 6,
-            "arms": 4,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 3,
-          "category": "body",
-          "name": "Kettenrüstung",
-          "description": null
-        },
-        {
-          "id": "scale_shirt",
-          "cost": 200,
-          "availability": "city",
-          "weight": 6,
-          "protection": {
-            "head": 0,
-            "body": 7,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 4,
-          "category": "body",
-          "name": "Schuppenhemd",
-          "description": null
-        },
-        {
-          "id": "scale_armor",
-          "cost": 300,
-          "availability": "city",
-          "weight": 7,
-          "protection": {
-            "head": 0,
-            "body": 7,
-            "arms": 4,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 5,
-          "category": "body",
-          "name": "Schuppenrüstung",
-          "description": null
-        },
-        {
-          "id": "breast_plate",
-          "cost": 800,
-          "availability": "large_city",
-          "weight": 10,
-          "protection": {
-            "head": 0,
-            "body": 8,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 6,
-          "category": "body",
-          "name": "Brustplatte",
-          "description": null
-        },
-        {
-          "id": "plate_armor",
-          "cost": 1200,
-          "availability": "large_city",
-          "weight": 12,
-          "protection": {
-            "head": 0,
-            "body": 10,
-            "arms": 4,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 8,
-          "category": "body",
-          "name": "Plattenrüstung",
-          "description": null
-        },
-        {
-          "id": "light_shoes",
-          "cost": 20,
-          "availability": "village",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 1
-          },
-          "hindrance": 0,
-          "category": "feet",
-          "name": "Alltagsschuhe",
-          "description": null
-        },
-        {
-          "id": "heavy_shoes",
-          "cost": 40,
-          "availability": "village",
-          "weight": 2,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 2
-          },
-          "hindrance": 1,
-          "category": "feet",
-          "name": "Feste Schuhe",
-          "description": null
-        },
-        {
-          "id": "climbing_shoes",
-          "cost": 60,
-          "availability": "town",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 1
-          },
-          "hindrance": 1,
-          "category": "feet",
-          "skills": {
-            "climbing": 2
-          },
-          "name": "Kletterschuhe",
-          "description": null
-        },
-        {
-          "id": "leather_boots",
-          "cost": 100,
-          "availability": "town",
-          "weight": 2,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 1,
-            "feet": 3
-          },
-          "hindrance": 2,
-          "category": "feet",
-          "name": "Lederstiefel",
-          "description": null
-        },
-        {
-          "id": "plated_boots",
-          "cost": 200,
-          "availability": "city",
-          "weight": 3,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 2,
-            "feet": 4
-          },
-          "hindrance": 2,
-          "category": "feet",
-          "name": "Beschlagene Stiefel",
-          "description": null
-        },
-        {
-          "id": "armor_boots",
-          "cost": 400,
-          "availability": "city",
-          "weight": 4,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 3,
-            "feet": 5
-          },
-          "hindrance": 3,
-          "category": "feet",
-          "name": "Panzerschuhe",
-          "description": null
-        },
-        {
-          "id": "light_gloves",
-          "cost": 10,
-          "availability": "village",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 1,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "hands",
-          "name": "Alltagshandschuhe",
-          "description": null
-        },
-        {
-          "id": "heavy_gloves",
-          "cost": 40,
-          "availability": "town",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 2,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 2,
-          "category": "hands",
-          "name": "Feste Handschuhe",
-          "description": null
-        },
-        {
-          "id": "riding_gloves",
-          "cost": 30,
-          "availability": "town",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 1,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "hands",
-          "skills": {
-            "riding": 2
-          },
-          "name": "Reithandschuhe",
-          "description": null
-        },
-        {
-          "id": "climbing_gloves",
-          "cost": 25,
-          "availability": "town",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 3,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "hands",
-          "skills": {
-            "climbing": 2
-          },
-          "name": "Kletterhandschuhe",
-          "description": null
-        },
-        {
-          "id": "shooting_gloves",
-          "cost": 20,
-          "availability": "town",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 1,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "hands",
-          "skills": {
-            "range_weapon": 2
-          },
-          "name": "Schießhandschuhe",
-          "description": null
-        },
-        {
-          "id": "silk_gloves",
-          "cost": 30,
-          "availability": "city",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 0,
-          "category": "hands",
-          "name": "Seidenhandschuhe",
-          "description": null
-        },
-        {
-          "id": "armor_gloves",
-          "cost": 150,
-          "availability": "city",
-          "weight": 2,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 5,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 4,
-          "category": "hands",
-          "name": "Panzerhandschuhe",
-          "description": null
-        },
-        {
-          "id": "light_pants",
-          "cost": 15,
-          "availability": "outskirts",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 1,
-            "feet": 0
-          },
-          "hindrance": 0,
-          "category": "legs",
-          "name": "Alltagshose",
-          "description": null
-        },
-        {
-          "id": "heavy_pants",
-          "cost": 30,
-          "availability": "village",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 2,
-            "feet": 0
-          },
-          "hindrance": 2,
-          "category": "legs",
-          "name": "Feste Hose",
-          "description": null
-        },
-        {
-          "id": "acrobat_pants",
-          "cost": 20,
-          "availability": "town",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 0,
-            "feet": 0
-          },
-          "hindrance": 0,
-          "category": "legs",
-          "skills": {
-            "acrobatics": 2
-          },
-          "name": "Akrobatenhose",
-          "description": null
-        },
-        {
-          "id": "riding_breeches",
-          "cost": 40,
-          "availability": "town",
-          "weight": 0,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 1,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "legs",
-          "skills": {
-            "riding": 2
-          },
-          "name": "Reithose",
-          "description": null
-        },
-        {
-          "id": "leather_pants",
-          "cost": 50,
-          "availability": "town",
-          "weight": 1,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 3,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "legs",
-          "name": "Lederhose",
-          "description": null
-        },
-        {
-          "id": "battle_skirt",
-          "cost": 80,
-          "availability": "city",
-          "weight": 2,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 4,
-            "feet": 0
-          },
-          "hindrance": 1,
-          "category": "legs",
-          "name": "Waffenrock",
-          "description": null
-        },
-        {
-          "id": "armor_skirt",
-          "cost": 150,
-          "availability": "city",
-          "weight": 3,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 6,
-            "feet": 0
-          },
-          "hindrance": 2,
-          "category": "legs",
-          "name": "Panzerrock",
-          "description": null
-        },
-        {
-          "id": "leg_braces",
-          "cost": 250,
-          "availability": "city",
-          "weight": 4,
-          "protection": {
-            "head": 0,
-            "body": 0,
-            "arms": 0,
-            "hands": 0,
-            "legs": 8,
-            "feet": 0
-          },
-          "hindrance": 4,
-          "category": "legs",
-          "name": "Beinschienen",
+          "price": 50,
+          "tiers": [
+            {
+              "id": "clothing",
+              "protection": 1,
+              "hindrance": 0,
+              "priceFactor": 1,
+              "availability": "outskirts",
+              "weight": 0,
+              "price": 50,
+              "name": "Kleidung",
+              "description": null
+            },
+            {
+              "id": "light_armor",
+              "protection": 3,
+              "hindrance": 1,
+              "priceFactor": 2.5,
+              "availability": "village",
+              "weight": 1,
+              "price": 125,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 250,
+                  "protection": 4,
+                  "hindrance": 1,
+                  "weight": 1,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 250,
+                  "protection": 3,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 500,
+                  "protection": 4,
+                  "hindrance": 0,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Leichte Rüstung",
+              "description": null
+            },
+            {
+              "id": "medium_armor",
+              "protection": 6,
+              "hindrance": 3,
+              "priceFactor": 6,
+              "availability": "town",
+              "weight": 1,
+              "price": 300,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 600,
+                  "protection": 8,
+                  "hindrance": 3,
+                  "weight": 2,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 600,
+                  "protection": 6,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 1200,
+                  "protection": 8,
+                  "hindrance": 2,
+                  "weight": 1,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Mittlere Rüstung",
+              "description": null
+            },
+            {
+              "id": "heavy_armor",
+              "protection": 10,
+              "hindrance": 6,
+              "priceFactor": 10,
+              "availability": "city",
+              "weight": 2,
+              "price": 500,
+              "variants": [
+                {
+                  "id": "reinforced",
+                  "price": 1000,
+                  "protection": 13,
+                  "hindrance": 6,
+                  "weight": 3,
+                  "name": "verstärkt"
+                },
+                {
+                  "id": "agile",
+                  "price": 1000,
+                  "protection": 10,
+                  "hindrance": 5,
+                  "weight": 2,
+                  "name": "beweglich"
+                },
+                {
+                  "id": "excellent",
+                  "price": 2000,
+                  "protection": 13,
+                  "hindrance": 5,
+                  "weight": 2,
+                  "name": "hochwertig"
+                }
+              ],
+              "name": "Schwere Rüstung",
+              "description": null
+            }
+          ],
+          "name": "Füße",
           "description": null
         }
       ]
